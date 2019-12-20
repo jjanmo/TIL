@@ -174,7 +174,7 @@
             ```
             > h2의 뒷부분에, 모든 div의 앞부분에 지정한 스타일이 가상의 요소로서 적용된다. 가상요소를 사용하기 위해선 반드시 content요소를 사용하여야 한다. 또한 가상요소이기 때문에 텍스트와는 다르게 드래그해도 먹히질않는다.
             >
-            > > _OUTPUT_ > > ![pseudo-element](../image/pseudo-element.PNG)
+            > > _OUTPUT_ ![pseudo-element](../image/pseudo-element.PNG)
 
 # 참고
 
