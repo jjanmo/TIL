@@ -42,7 +42,7 @@
  - elementN은 배열을 생성할 때 사용할 요소를 나타낸다. 
  - **매개변수를 배열의 원소로 갖는 새로운 Array 객체를 생성**한다.
 
-📖Example : Array.of()
+📖 Example : Array.of()
 ```javascript
 Array.of(1);         // [1]
 Array.of(1, 2, 3);   // [1, 2, 3]
@@ -54,7 +54,7 @@ Array.of(undefined); // [undefined]
 - 배열 안의 모든 요소가 콜백함수(판별함수)를 만족하는지를 판별하여 **모두 만족하면 true**를, **하나라도 어긋나면 false**를 반환한다. 어떤 요소를 순회 중에 콜백함수가 false를 나타내게 되면 배열의 모든 요소를 판별하지 않았어도 그 즉시 false를 리턴한다.
 - [ ].every(callback)인 경우는 무조건 true를 리턴한다.
 
-📖Example : every()
+📖 Example : every()
 ```javascript
 const arr1 = [2, 4, 6, 8, 10];
 const arr2 = [12, 14, 15, 19, 20];
@@ -81,7 +81,7 @@ console.log(arr3.every(isEven)); //true
  - every() 와 반대 성격을 갖는 메소드이다. 배열의 원소 중에 **하나라도 콜백함수에 만족하면 true**를 반환하고 바로 메소드를 종료한다. 하지만 **한 개라도 만족하는 것이 없으면 모든 원소를 확인 하게 되며, 결과값에 false**를 리턴한다.
  - 빈 배열의 경우는 무조건 false를 리턴한다.  
 
-📖Example : some()
+📖 Example : some()
 ```javascript
 const arr1 = [1, 2, 3, 4, 5];
 const arr2 = [1, 3, 5, 7, 9];
@@ -104,7 +104,7 @@ console.log(arr3.some(isEven)); //false
  - syntax : arr.sort([compareFunction])
  - 새로운 배열을 정렬시켜서 리턴하는 것이 아니라 **원배열을 정렬하여 리턴시키는 것**이다. **정렬의 기준은 기본적으로 문자열로 변환되어 비교된 오름차순이다.** 예를 들어 8과 70을 비교하면 크기대로 정렬이 된다면, 8 70 순서지만, 문자열로 변환되어서 정렬되기때문에 70 8 순으로 정렬된다. 만약에 숫자 순으로 정렬을 하고 싶다거나, 내림차순으로 정렬하고 싶다면 **compareFunction인 콜백함수를 설정**해주면 된다.
 
-📖Example : sort()  
+📖 Example : sort()  
 ```javascript
 const numbers = [40, 12, 5, 2, 3];
 //기본정렬인 경우
@@ -128,7 +128,7 @@ console.log(numbers); //40 12 5 3 2
 - **배열의 모든 요소를 연결해서 하나의 문자열**로 만든다. 만약에 특정 구분자(separator)를 설정한다면, 각 요소 사이에 그 구분자가 들어가면서 하나의 문자열을 완성한다. 구분자를 생략하면 , 로 연결된다. 또한 arr.length가 0이라면 빈문자열을 반환한다.
 - **문자열과 배열을 자유롭게 전환하는데 split()과 함께 유용하게 사용할 수 있다.**
 
-📖Example : join()  
+📖 Example : join()  
 ```javascript
 const arr = ['java','javascript','python'];
 const empty = [];
