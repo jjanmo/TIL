@@ -1,5 +1,6 @@
 #  To be a Real Full Stack Web Seveloper  
-> [개발자 로드맵](https://github.com/kamranahmedse/developer-roadmap)을 바탕으로 현재 내가 공부 했던, 공부 하고 있는, 공부해야만 하는 내용들에 대해서 정리 할 예정이다. 
+> [개발자 로드맵](https://github.com/kamranahmedse/developer-roadmap)을 바탕으로 현재 내가 공부 했던, 공부 하고 있는, 공부해야만 하는 내용들에 대해서 정리 할 예정이다.
+> 단순한 체크리스트가 아닌, 웹 개발자로서 필요한 최소한의 것들을 정리합니다.
 
 ## Frontend
 ### HTML
@@ -23,9 +24,6 @@
 ### Express.js
 ### MySQL
 ### MongoDB
-### Java
-### Servlet & JSP
-### Spring
 
 ## DevOps
 ### Operating System의 개념
