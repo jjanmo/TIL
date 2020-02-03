@@ -28,26 +28,26 @@
 ## Package 설치
 
 ```
-📖 NPM을 통해서 설치하는 프로그램의 종류
-  1. 독립적인 프로그램
+📖 NPM을 통해서 설치하는 패키지의 종류
+  1. 독립적인 패키지
     독립적으로 실행되는 Command Line Program(CLI Program)
-  2. 종속적인 프로그램
-    일종의 부품으로서 다른 프로그램 안에서 사용되는 프로그램
+  2. 종속적인 패키지
+    일종의 부품으로서 다른 프로그램 안에서 사용되는 패키지
 ```
 
 -   `npm install local-web-server`
 
     -   현재 위치하는 디렉토리에 패키지가 설치된다.
-    -   내가 지금 만들려는 프로그램의 부품으로서 이 프로그램을 사용하겠다는 의미일 때 보통 이렇게 명령어를 사용한다.
+    -   내가 지금 만들려는 프로그램의 부품으로서 이 패키지를 사용하겠다는 의미일 때 보통 이렇게 명령어를 사용한다.
 
 -   `npm install -g local-web-server`
 
-    -   전역적인, 독립적인 프로그램으로서 이 프로그램으로 설치하고 싶을때는 옵션 `-g`를 사용한다.
+    -   전역적인, 독립적인 프로그램으로서 이 패키지를 설치하고 싶을 때는 옵션 `-g`를 사용한다.
     -   -g : global
 
 -   `ws`
     -   독립적인 프로그램으로서, 웹서버로서 프로그램이 실행된다.
-    -   실행 명령어는 각각 프로그램마다 다르다.
+    -   실행 명령어는 각각 설치하는 패키지마다 다르다.
 
 ## Package 목록 검색
 
@@ -70,12 +70,12 @@
 
 ## Package 업데이트
 
--   npm update -g local-web-server
+-   `npm update -g local-web-server`
 
 ## Package 삭제
 
--   npm uninstall -g local-web-server
--   npm remove -g local-web-server
+-   `npm uninstall -g local-web-server`
+-   `npm remove -g local-web-server`
 
 > 전역으로 설치하지 않았다면, 업데이트와 삭제 명령어에서 -g를 빼면 된다.
 
