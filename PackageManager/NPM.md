@@ -66,8 +66,6 @@
 
     ![npmlistg_depth](../image/npmlistg_depth.png)
 
--
-
 ## Package 업데이트
 
 -   npm update -g local-web-server
