@@ -58,15 +58,13 @@
     -   전역적으로 설치된 패키지의 목록을 보여준다.
     -   설치한 패키지 + 그 안에 부품으로서의 패키지 모두 보여준다.
 
-    ![npmlistg](../image/npmlistg.PNG)(목록의 일부분)
+    ![npmlistg](../image/npmlistg.png)(목록의 일부분)
 
 -   `npm list -g --depth=0`
 
     -   설치한 프로그램에 대한 목록만 보여준다. 즉 의존관계에서 가장 처음에 있는 부분에 해당하는 목록만 보여준다.
 
-    ![npmlistg_depth](../image/npmlistg_depth.PNG)
-
--
+    ![npmlistg_depth](../image/npmlistg_depth.png)
 
 ## Package 업데이트
 
