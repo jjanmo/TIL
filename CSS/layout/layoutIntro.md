@@ -4,15 +4,15 @@
 
 > layout을 만드는데 필요한 CSS property와 기본개념에 대해서 정리한다.
 
--   [display](CSS/layout/display.md)
--   [box-model](CSS/layout/boxmodel.md)
--   [box-sizing](CSS/layout/boxsizing.md)
--   [position](CSS/layout/position.md)
--   [float](CSS/layout/float.md)
--   [columns](CSS/layout/columns.md)
--   [media-query](CSS/layout/mediaquery.md)
--   [Flexbox](CSS/layout/flexbox.md)
--   [Grid](CSS/layout/grid.md)
+-   [display](./display.md)
+-   [box-model](./boxmodel.md)
+-   [box-sizing](./boxsizing.md)
+-   [position](./position.md)
+-   [float](./float.md)
+-   [columns](./columns.md)
+-   [media-query](./mediaquery.md)
+-   [Flexbox](./flexbox.md)
+-   [Grid](./grid.md)
 
 # 참고
 
