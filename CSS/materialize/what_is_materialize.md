@@ -28,5 +28,5 @@
 
 # 참고
 
-[Materialize CSS From Scratch With 5 Projects](https://www.udemy.com/course/materialize-css-from-scratch-with-5-projects/)<br>
+[Materialize CSS From Scratch With 5 Projects - Intro Section](https://www.udemy.com/course/materialize-css-from-scratch-with-5-projects/)<br>
 [디자인번역공장 블로그](https://www.vobour.com/materialise%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%9C-material-design%EC%9D%98-%EA%B0%84%EB%8B%A8%ED%95%9C-%EC%86%8C%EA%B0%9C)
