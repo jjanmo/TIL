@@ -1,12 +1,15 @@
 # Node.js
 
 ```
-Node.js is an open-source, cross-platform, JavaScript runtime environment. It executes JavaScript code outside of a browser. 
+Node.js is an open-source, cross-platform, JavaScript runtime environment. 
+It executes JavaScript code outside of a browser. 
 ```
 > runtime environment(실행환경) : 어떤 언어가 동작하는 환경
 
 ```
-A run-time system (also called runtime system, runtime environment, or just runtime) implements the basic behavior of a computer language, whether the language is a compiled language, interpreted language, embedded domain-specific language, or is invoked via an API as is pthreads.
+A run-time system (also called runtime system, runtime environment, or just runtime) implements 
+the basic behavior of a computer language, whether the language is a compiled language, 
+interpreted language, embedded domain-specific language, or is invoked via an API as is pthreads.
 ```
 
 자바스크립트가 동작하는 환경은 최초에는 브라우저에서만 작동하였다. 그렇기 때문에 자바스크립트는 브라우저라는 울타리에서 벗어나지 못하는 한계를 갖고 있는 언어였다. 
