@@ -18,7 +18,7 @@
 ### Javascript
 
 - Must Know JavaScript Concept
-    > [33 Concepts Every JavaScript Developer Should Know](https://github.com/jjanmo/33-js-concepts) 를 참고하여 정리합니다.
+    > [33 Concepts Every JavaScript Developer Should Know](https://github.com/jjanmo/33-js-concepts) 를 바탕으로 정리합니다.
 
 - Array 
    - [Array methods 1탄](JavaScript/Array/arrayMethod1.md)
