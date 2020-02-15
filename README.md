@@ -17,10 +17,16 @@
 
 ### Javascript
 
--   [반드시 알아야 할 Array methods 1탄](JavaScript/arrayMethod1.md)
-    -   Array.from(), Array.of(), every(). some(), sort(), join(), forEach()
--   [반드시 알아야 할 Array methods 2탄](JavaScript/arrayMethod2.md)
-    -   filter(), find(), findIndex(), indexOf(), lastIndexOf(), includes()
+- Must Know JavaScript Concept
+    > [33 Concepts Every JavaScript Developer Should Know](https://github.com/jjanmo/33-js-concepts#22-high-order-functions) 를 참고하여 정리합니다.
+
+- Array 
+   - [Array methods 1탄](JavaScript/Array/arrayMethod1.md)
+        >  Array.from(), Array.of(), every(). some(), sort(), join(), forEach()
+    - [Array methods 2탄](JavaScript/Array/arrayMethod2.md)
+        > filter(), find(), findIndex(), indexOf(), lastIndexOf(), includes()
+
+
 
 ### Package Manager
 
