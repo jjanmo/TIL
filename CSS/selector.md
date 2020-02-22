@@ -137,15 +137,28 @@
         -   element:visited : 방문한 링크
         -   element:hover : 마우스가 위에 있는 경우
         -   element:active : 클릭하는 경우
-        -   element:first-child : element의 sibling element 중에서 첫번째
-        -   element:last-child : element의 sibling element 중에서 마지막
-        -   element:nth-child(산수식가능) : n이 산수식에 따라 sibling element를 선택
+        -   element:first-child : element 중에서 첫번째
+        -   element:last-child : element 중에서 마지막
+        -   element:nth-child(산수식가능) : n이 산수식에 따라 element를 선택
+
+            ```HTML
+            <ul>
+                <li>111111111</li>
+                <li>222222222</li>
+                <li>333333333</li>
+                <li>444444444</li>
+            </ul>
+            ```
+
             ```CSS
-                ul:nth-child(2n+1){
+                li:nth-child(2n+1){
                     background-color : red;
                 }
             ```
-            > ul element의 자식 중에서 2n+1번째에 해당하는 자식들만 선택하는 것. **n은 0부터 들어가고, 자식은 첫번째 자식부터 존재한다.**
+
+            > li element 중에서 2n+1번째에 해당하는 li element들만 선택하는 것. 즉 숫자 1과 3에 해당하는 li element의 배경색이 빨간색이 된다.
+
+            > **n은 0부터 들어가고, element는 첫번째(1)부터 존재한다. (첫번째 자식부터 시작, 0번째 자식은 없다)**
 
 -   가상요소(Pseudo Selector)
     -   가상클래스처럼 선택자에 추가되는 형태는 비슷하지만 (가상클래스 : 사용 / 가상요소 :: 사용(':' 1개만 사용가능)) 문서의 특정부분을 가상으로 스타일을 지정할 수 있다.
