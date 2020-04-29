@@ -84,7 +84,7 @@ console.log('after swap', x, y); // 10, 5?? (X) -> still 5, 10
 
 ![passedbyvalue](../../image/passbyvalue.png)
 
-## Passed by value of references ??😵
+## Passed by value of references
 
 > 참조타입에서의 인자 전달
 
