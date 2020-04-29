@@ -28,7 +28,7 @@
 2. [Primitive Type(원시자료형)](JavaScript/33Concepts/primitivetype.md)
     - Wrapper Object
     - [Dynamic Type](JavaScript/33Concepts/dynamicType.md)
-3. Value Types and Reference Types(값과 참조형) ✅
+3. [Value Types and Reference Types(값과 참조형)](JavaScript/33Concepts/valueType-vs-referenceType.md)
 4. Type Coercion(형변환) ✅
 5. == vs === ✅
 6. Scope(유효범위) ✅
