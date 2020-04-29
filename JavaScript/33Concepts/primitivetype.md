@@ -64,7 +64,7 @@ null undefined ''(empty string) 0 NaN false
 
 # More
 
--   [Wrapper Object]()<br>
+-   Wrapper Object<br>
 -   [Dynamic Typing(동적타이핑)](dynamicType.md)
 
 # Ref
