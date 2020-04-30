@@ -52,3 +52,19 @@ prototype은 말그대로 **원형**을 말한다
 
 Prototype Object
 Prototype Link
+
+## What is Prototype
+
+## How to use Prototype
+
+## Why use Prototype
+
+# More
+
+-   Factory Pattern
+-   Observer Pattern
+
+# Ref
+
+[Javascript: prototype 이란\_마이구미의 HelloWorld](https://mygumi.tistory.com/312)<br>
+[Object prototype 이해하기\_Insanehong](http://insanehong.kr/post/javascript-prototype/)<br>
