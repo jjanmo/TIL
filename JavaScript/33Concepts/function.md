@@ -107,10 +107,12 @@ console.log(test); //6
 
 -   자바스크립트에서의 `Object`는 primitive type(원시자료형) 아닌 모든 것이다. 그렇기 때문에 `Function`도 역시 `Object` 이다.
 -   자바스크립트의 `Object`는 다재다능하기때문에 `Function` 역시 그러하다.
--   1️⃣ `parameter`로 `fucntion`을 넘길수 있고, 2️⃣ `function`을 `return값`으로 `function`을 return하는 경우, 이것을 `High Order Functions`이라고 부른다.
+-   `High Order Functions` 란 함수를 parameter로 전달받거나 함수를 결과로 반환하는(return) 함수를 말한다.
+    > `High Order Functions`란 함수의 다재다능함을 나타내는 다른 표현이라고 생각한다.
 
 # More
 
+-   First Class Object (1급객체)
 -   High Order Functions(고차함수)
 
 # Ref
