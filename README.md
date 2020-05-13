@@ -31,7 +31,10 @@
 3. [Value Types and Reference Types(값과 참조형)](JavaScript/33Concepts/valueType-vs-referenceType.md)
 4. Type Coercion(형변환) ✅
 5. == vs === ✅
-6. Scope(유효범위) ✅
+6. Function Scope, Block Scope and Lexical Scope
+
+    - [Function Basic](JavaScript/33Concepts/function.md)
+
 7. Expression vs Statement(표현식과 문장) ✅
 8. IIFE, Modules and Namespaces
 9. Message Queue and Event Loop ✅
