@@ -1,4 +1,4 @@
-# `this` for beginner
+# this for beginner
 
 ## `this` 란 무엇인가?
 
@@ -15,9 +15,7 @@
 
 ### Dot notation을 통한 메서드 호출
 
-> Implicit Binding이라고 부르기도 한다.
-
-> 가장 많이 사용되는 방식으로, 보통 객체 안의 메소드를 호출할 때 `.` 을 통해서 그 객체의 프로퍼티에 접근한다. 이 때 `.` 의 `바로 앞의 객체`가 `this`에 해당하는 것이 된다.
+> 가장 많이 사용되는 방식으로, 보통 객체 안의 메소드를 호출할 때 `.` 을 통해서 그 객체의 프로퍼티에 접근한다. 이 때 `.` 의 `바로 앞의 객체`가 `this`에 해당하는 것이 된다. 이러한 형식을 `Implicit Binding`이라고 한다.
 
 ```javascript
 function hello() {
@@ -49,7 +47,7 @@ kim.lee.greeting(); //Hello my name is suji
 
 ### call(), apply() 를 이용한 함수 호출
 
-> `명시적인`이라는 `explicit`의 뜻처럼 call()과 apply()메소드를 이용해서 this에 명시적으로 특정값을 묶어주기 때문에 `Explicit Binding`이라고 부르기도 한다.
+> `명시적인`이라는 `explicit`의 뜻처럼 call()과 apply()메소드를 이용해서 this에 명시적으로 특정값을 묶어주기 때문에 `Explicit Binding`이라고 한다.
 
 > `call(), apply(), bind()`는 모든 함수 객체의 프로토타입 객체인 `Function.prototype객체의 메소드`이다. 즉, 모든 function 객체는 이를 가지고 있다.
 
@@ -95,9 +93,7 @@ baz(); //4. this? foo / 100
 
 ### new 키워드를 통한 함수 호출
 
-> the new binding
-
-자바스크립트에서 new연산자를 사용하여 함수를 호출하는 경우, **새로운 객체를 생성**하여 그 새로운 객체와 `this`를 묶는다. 그래서 `new binding`이라고 명명한다.
+> 자바스크립트에서 new연산자를 사용하여 함수를 호출하는 경우, **새로운 객체를 생성**하여 그 새로운 객체와 `this`를 묶는다. 그래서 `new binding`이라고 명명한다.
 
 ```javascript
 function foo(name) {
@@ -108,7 +104,7 @@ var jjanmo = new foo('jjanmo');
 console.log(jjanmo); // { name : 'jjanmo' }
 ```
 
-> `new연산자`를 사용하여 함수를 호출하게 되면 숨겨진 2가지가 나타나게 된다. 첫번째는 new연산자에 의해서 `새로운 빈객체({})`가 생성된다. 그 `빈객체에 this를 바인딩`한다. 이 때 호출되는 함수를 `생성자함수`라고 한다. 두번째는 생성자함수는 특별하게 return값이 없어도 `this`를 반환한다. 만약에 특정값으로 return값을 지정해준다면 그 지정값이 반환되기는하나 그 함수는 생성자함수의 역할을 수행하지 못하게 된다. 이렇게 new연산자(생성자함수)를 통하면 `새로운 객체`가 생성되는 이를 `instance`라고 한다.
+> `new연산자`를 사용하여 함수를 호출하게 되면 숨겨진 2가지가 나타나게 된다. 첫번째는 new연산자에 의해서 `새로운 빈객체({})`가 생성된다. 그 `빈객체`에 `this를 바인딩`한다. 이 때 호출되는 함수를 `생성자함수`라고 한다. 두번째는 생성자함수는 특별하게 return값이 없어도 `this`를 반환한다. 만약에 특정값으로 return값을 지정해준다면 그 지정값이 반환되기는하나 그 함수는 생성자함수의 역할을 수행하지 못하게 된다. 이렇게 new연산자(생성자함수)를 통하면 `새로운 객체`가 생성되는데 이를 `instance`라고 한다.
 
 > 사실 `생성자함수`라 함은 위의 함수인 `foo`가 아니라 **혼란을 방지하기위해서** 일반적으로 `첫글자`를 `대문자`로 작성한다.`(Foo)` 하지만 new연산자를 사용하면 대문자에 상관없이 같은 방식으로 작동하긴한다.
 
@@ -139,7 +135,7 @@ function foo() {
 foo(); //this === window / 100
 ```
 
-#### use strict mode(엄격모드)
+#### use strict mode(엄격모드)에서의 this
 
 > 엄격모드란 일반적으로 일어나는 버그를 방지하기위해서 사용하는 모드를 말한다. 여기서는 this가 window를 가르키지 않고 `this === undefined`를 말한다.
 
@@ -152,5 +148,3 @@ foo(); //this === window / 100
 -   [함수 호출 방식에 의해 결정되는 this](https://poiemaweb.com/js-this)
 
 -   [Function.prototype.apply()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Function/apply)
-
--
