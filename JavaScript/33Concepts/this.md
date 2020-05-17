@@ -1,4 +1,4 @@
-# WTF **`this`**??
+# `this` for beginner
 
 ## `this` 란 무엇인가?
 

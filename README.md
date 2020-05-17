@@ -43,7 +43,9 @@
 12. Bitwise Operators, Type Arrays and Array Buffers ✅
 13. DOM and Layout Trees
 14. Factories and Classes ✅
-15. this, call, apply and bind ✅
+15. this, call, apply and bind
+    - [`this` for beginner](JavaScript/33Concepts/this.md)
+    - [call() vs apply() vs bind()](JavaScript/33Concepts/call_apply_bind.md)
 16. new, Constructor, instanceof and Instances ✅
 17. Prototype Inheritance and Prototype Chain(프로토타입의 상속과 체인) ✅
 18. Object.create and Object.assign ✅
