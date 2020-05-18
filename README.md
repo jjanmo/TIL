@@ -24,7 +24,7 @@
 -   Must Know JavaScript Concept
     > [33 Concepts Every JavaScript Developer Should Know](https://github.com/jjanmo/33-js-concepts) 를 바탕으로 정리합니다.
 
-1. Call Stack(호출스택) ✅
+1. [Call Stack(호출스택)](JavaScript/33Concepts/callstack.md)
 2. [Primitive Type(원시자료형)](JavaScript/33Concepts/primitivetype.md)
     - Wrapper Object
     - [Dynamic Type](JavaScript/33Concepts/dynamicType.md)
