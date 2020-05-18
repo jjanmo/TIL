@@ -112,8 +112,8 @@ console.log(test); //6
 
 # More
 
--   First Class Object (1급객체)
--   High Order Functions(고차함수)
+-   [Arrow Function(화살표 함수)](arrowfunction.md)
+-   High Order Functions(고차함수) & First Class Object (1급객체)
 
 # Ref
 

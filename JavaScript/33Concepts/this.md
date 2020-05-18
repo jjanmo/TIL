@@ -2,7 +2,7 @@
 
 ## `this` 란 무엇인가?
 
-누군가 이렇게 물어본다면 이것은 `우문`이라고 생각한다. 반대로 `현답`을 하자면 `this가 어디서 어떻게 사용되나요?`라고 다시 물어봐야할 것이다. 이 말이 이해가 된다면 this를 어느 정도 알고있다고 말할 수 있지 않을까 싶다.
+누군가 이렇게 물어본다면 이것은 `우문`이라고 생각한다. 여기서 `현답`을 하자면 `this가 어디서 어떻게 사용되나요?`라고 다시 물어봐야할 것이다. 이 말이 이해가 된다면 this를 어느 정도 알고있다고 말할 수 있지 않을까 싶다.
 
 > 물론 나도 아직 잘모른다.😅 그러니까 이제부터 정리해보자 🚀
 
@@ -11,7 +11,7 @@
 -   다른 말로 표현하자면 this의 값은 `this가 불리는 문맥`에 따라서 다르게 해석된다는 말이기도 하다.
 -   `this`는 대부분의 경우에 특정 객체를 가르킨다.
 
-## 함수가 호출되는 방식에 따라서 this값이 결정된다면, 함수가 호출되는 방식은 어떤 것들이 있는가?
+## 함수가 호출되는 방식에 따른 this
 
 ### Dot notation을 통한 메서드 호출
 
@@ -45,20 +45,20 @@ kim.lee.greeting(); //Hello my name is suji
 
 <br>
 
-### call(), apply() 를 이용한 함수 호출
+### call(), apply()를 이용한 함수 호출
 
-> `명시적인`이라는 `explicit`의 뜻처럼 call()과 apply()메소드를 이용해서 this에 명시적으로 특정값을 묶어주기 때문에 `Explicit Binding`이라고 한다.
+> `call(), apply(), bind()`는 모든 함수 객체의 프로토타입 객체인 `Function.prototype 객체의 메소드`이다. 즉, 모든 function 객체는 이를 가지고 있다.
 
-> `call(), apply(), bind()`는 모든 함수 객체의 프로토타입 객체인 `Function.prototype객체의 메소드`이다. 즉, 모든 function 객체는 이를 가지고 있다.
+> `명시적인`이라는 `explicit`의 뜻처럼 call()과 apply()메소드를 이용해서 this에 명시적으로 특정값을 바인딩하기 때문에 `Explicit Binding`이라고 한다.
 
 > `call(), apply()`의 모두 기본적인 기능은 함수 호출이다. 단지 this와 묶일 객체를 명시적인 첫번째 인자로서 알려주는 것뿐이다.
 
-|          |                  apply()                   |                     call()                     |                                                               bind()                                                               |
-| :------: | :----------------------------------------: | :--------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------: |
-|  syntax  |      func.apply(thisArg, [argsArray])      |   func.call(thisArg[, arg1[, arg2[, ...]]])    |                                              func.call(thisArg[, arg1[, arg2[, ...]]]                                              |
-|   arg1   |         this와 묶일(바인딩할) 객체         |           this와 묶일(바인딩할) 객체           |                                                     this와 묶일(바인딩할) 객체                                                     |
-|   arg2   |             배열 1개(유사배열)             |                  각각의 값들                   |                                                            각각의 값들                                                             |
-| 작동방식 | this로 지정한 값과 인수로 함수를 호출한다. | this로 지정한 값과 인수(들)로 함수를 호출한다. | this로 지정한 값과 인수(들)로 **새로운 함수를 생성**한다. 바로 호출하지는 않는다. 호출하고자한다면 명시적으로 다시 호출해줘야한다. |
+|          |                  apply()                   |                     call()                     |                                                             bind()                                                             |
+| :------: | :----------------------------------------: | :--------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------: |
+|  syntax  |      func.apply(thisArg, [argsArray])      |   func.call(thisArg[, arg1[, arg2[, ...]]])    |                                            func.call(thisArg[, arg1[, arg2[, ...]]]                                            |
+|   arg1   |         this와 묶일(바인딩할) 객체         |           this와 묶일(바인딩할) 객체           |                                                   this와 묶일(바인딩할) 객체                                                   |
+|   arg2   |             배열 1개(유사배열)             |                  각각의 값들                   |                                                          각각의 값들                                                           |
+| 작동방식 | this로 지정한 값과 인수로 함수를 호출한다. | this로 지정한 값과 인수(들)로 함수를 호출한다. | this로 지정한 값과 인수(들)로 **새로운 함수를 생성**한다. 바로 호출하지는 않는다. 호출하고자 한다면 명시적으로 호출해줘야한다. |
 
 > arg1이 없는 경우 `전역객체(window)`에 `this를 바인딩`한다.
 
@@ -120,9 +120,19 @@ var darkknight = new Movie('darkknight', 2008);
 console.log(darkknight); //Movie {title: "darkknight", released: 2008}
 ```
 
-### 일반적인 함수 호출
+### 일반적인 함수 호출(단순호출)
 
-> 우리가 일반적으로 알고 있는 함수 호출을 의미한다. 이 때는 `this`가 `window`와 바인딩되기 때문에 `the window binding`이라고 부른다.
+> 엄격모드가 아닌 경우, `this`는 기본적으로 `전역객체`를 나타낸다.
+
+> 전역객체란 브라우저에서는 `window 객체`이고 node에서는 `global 객체` 를 의미한다.
+
+```javascript
+console.log(this === window); //true
+
+var number = 100;
+console.log(this.number); //100
+console.log(window.number); //100
+```
 
 ```javascript
 var number = 100;
@@ -132,12 +142,54 @@ function foo() {
     console.log(this.number);
 }
 
-foo(); //this === window / 100
+foo(); //this === window 이고 100 출력
 ```
+
+```javascript
+var movie = 'zootopia';
+
+var obj = {
+    movie: 'lionking',
+    getMovie() {
+        console.log(this.movie);
+    },
+};
+
+setTimeout(obj.getMovie, 1000); //zootopia
+```
+
+> 콜백함수 안에서 함수를 호출하면 어떻게 될까? `lionking`이라는 영화가 찍히길 예상했지만 실제값은 `zootopia`이다. `obj.getMovie` 라는 메소드의 참조값만을 콜백으로 넣어준 것이고 실제론 setTimeout()가 `obj.getMovie`를 `callback()`이라고 호출하기 때문에 this는 `전역객체`와 바인딩된다.
+
+```javascript
+var number = 10;
+
+var obj = {
+    number: 55,
+    foo() {
+        console.log(this.number); //1
+        function bar() {
+            console.log(this.number); //2
+        }
+        bar();
+    },
+};
+
+obj.foo(); //output? 1-55 2-10
+```
+
+> 내장함수인 `bar()`는 호출하는 부분이 `obj객체 안`에 존재한다. 즉 그 안에서 호출하기 때문에 그것만으로 this가 결정된다. `foo()`는 dot notation에 의해서 this는 바로 앞 객체인 `obj`를 가르킨다. **함수를 어떻게 호출하는냐**에 obj안에 위치에한 this값이 달라지게 된다.
 
 #### use strict mode(엄격모드)에서의 this
 
-> 엄격모드란 일반적으로 일어나는 버그를 방지하기위해서 사용하는 모드를 말한다. 여기서는 this가 window를 가르키지 않고 `this === undefined`를 말한다.
+> 엄격모드란 일반적으로 일어나는 버그를 방지하기 위해서 사용하는 모드를 말한다. 여기서는 this가 window를 가르키지 않고 `this === undefined`를 말한다.
+
+### Arrow Function(화살표함수)에서의 this
+
+> 화살표함수에서는 지금까지 살펴봤던 this와는 약간 다른 양상이 보여진다. 지금까지의 this는 함수가 호출되는 상황에 따라서 동적으로 그 의미가 결정되었다. 하지만 화살표함수에서의 this는 언제나 정적으로 결정된다. 즉 화살표함수의 this는 `화살표함수의 상위 스코프의 this`를 따르게된다. 이런 이유로 화살표함수는 `자신만의 this`가 없다고 말한다.
+
+> 이렇게 this에 바인딩하는 형식을 `Lexical binding`이라고 부른다.(`Lexical Environment`와 유사)
+
+> 자세한 부분은 [화살표함수편](arrowfunction.md)에서 계속된다.
 
 # Ref
 
@@ -148,3 +200,5 @@ foo(); //this === window / 100
 -   [함수 호출 방식에 의해 결정되는 this](https://poiemaweb.com/js-this)
 
 -   [Function.prototype.apply()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Function/apply)
+
+-   [자바스크립트 this 바인딩 우선순위](http://jeonghwan-kim.github.io/2017/10/22/js-context-binding.html)
