@@ -33,7 +33,8 @@
 5. == vs === ✅
 6. Function Scope, Block Scope and Lexical Scope
 
-    - [Function Basic](JavaScript/33Concepts/function.md)
+    - [Function Basic](JavaScript/33Concepts/function_basic.md)
+    - [About Arrow Function](JavaScript/33Concepts/arrowfunction.md)
 
 7. Expression vs Statement(표현식과 문장) ✅
 8. IIFE, Modules and Namespaces
@@ -44,7 +45,7 @@
 13. DOM and Layout Trees
 14. Factories and Classes ✅
 15. this, call, apply and bind
-    - [`this` for beginner](JavaScript/33Concepts/this.md)
+    - [this for beginner](JavaScript/33Concepts/this.md)
     - [call() vs apply() vs bind()](JavaScript/33Concepts/call_apply_bind.md)
 16. new, Constructor, instanceof and Instances ✅
 17. Prototype Inheritance and Prototype Chain(프로토타입의 상속과 체인) ✅
