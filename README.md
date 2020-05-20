@@ -2,8 +2,6 @@
 
 > [개발자 로드맵](https://github.com/kamranahmedse/developer-roadmap)을 바탕으로 현재 내가 공부 했던, 공부 하고 있는, 공부해야만 하는 내용들에 대해서 정리 할 예정이다.
 
-> 단순한 체크리스트가 아닌, 웹 개발자로서 필요한 최소한의 것들을 정리합니다.
-
 ## Frontend
 
 ### CSS
@@ -26,10 +24,11 @@
 
 1. [Call Stack(호출스택)](JavaScript/33Concepts/callstack.md)
 2. [Primitive Type(원시자료형)](JavaScript/33Concepts/primitivetype.md)
+    - Immutable
     - Wrapper Object
     - [Dynamic Type](JavaScript/33Concepts/dynamicType.md)
 3. [Value Types and Reference Types(값과 참조형)](JavaScript/33Concepts/valueType-vs-referenceType.md)
-4. Type Coercion(형변환) ✅
+4. [Type Coercion(형변환)](JavaScript/33Concepts/coercion.md)
 5. == vs === ✅
 6. Function Scope, Block Scope and Lexical Scope
 
