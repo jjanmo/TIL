@@ -23,8 +23,10 @@
     > [33 Concepts Every JavaScript Developer Should Know](https://github.com/jjanmo/33-js-concepts) 를 바탕으로 정리합니다.
 
 1. [Call Stack(호출스택)](JavaScript/33Concepts/callstack.md)
+    - [Execution Context(실행컨텍스트)](JavaScript/33Concepts/execution-context.md)
+  
 2. [Primitive Type(원시자료형)](JavaScript/33Concepts/primitivetype.md)
-    - Immutable
+
     - Wrapper Object
     - [Dynamic Type](JavaScript/33Concepts/dynamicType.md)
 3. [Value Types and Reference Types(값과 참조형)](JavaScript/33Concepts/valueType-vs-referenceType.md)
@@ -40,7 +42,7 @@
 
 7. Expression vs Statement(표현식과 문장) ✅
 8. IIFE, Modules and Namespaces
-9. Message Queue and Event Loop ✅
+9.  Message Queue and Event Loop ✅
 10. setTimeout, setInterval and requestAnimationFrame ✅
 11. JavaScript Engines ✅
 12. Bitwise Operators, Type Arrays and Array Buffers ✅
