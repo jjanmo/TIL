@@ -175,7 +175,7 @@ console.log(c); //30
 3. `block scope`를 갖는다.
 4. 호이스팅(hoisting)이 일어나지 않는다.
 
-> 🚀 [프로퍼티를 변경할 객체에 const키워드를 사용할 수 있을까?](const_object.md)
+> 🚀 [프로퍼티의 변경이 있는 객체 혹은 요소의 변경이 있는 배열에 let키워드를 사용할까](const_object.md)
 
 # Practices
 
