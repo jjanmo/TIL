@@ -34,6 +34,9 @@
 
     - [Function Basic](JavaScript/33Concepts/function_basic.md)
     - [About Arrow Function](JavaScript/33Concepts/arrowfunction.md)
+    - [Variables,Function Scope, Block Scope](JavaScript/33Concepts/variables.md)
+    - [Hoisting](JavaScript/33Concepts/hoisting.md)
+    - [Scope](JavaScript/33Concepts/scope.md)
 
 7. Expression vs Statement(표현식과 문장) ✅
 8. IIFE, Modules and Namespaces
