@@ -70,9 +70,6 @@
     - [call() vs apply() vs bind()](javascript/33Concepts/call_apply_bind.md)
 16. new, Constructor, instanceof and Instances ✅
 17. Prototype Inheritance and Prototype Chain(프로토타입의 상속과 체인)
-
-    - []
-
 18. Object.create and Object.assign ✅
 19. map, reduce, filter ✅
 20. Pure Functions, Side Effects and State Mutation
@@ -91,9 +88,9 @@
 33. Clean Code
 
 -   Array
-    -   [Array methods 1탄](javaScript/array/arrayMethod1.md)
+    -   [Array methods 1탄](javascript/array/arrayMethod1.md)
         > Array.from(), Array.of(), every(). some(), sort(), join(), forEach()
-    -   [Array methods 2탄](javaScript/array/arrayMethod2.md)
+    -   [Array methods 2탄](javascript/array/arrayMethod2.md)
         > filter(), find(), findIndex(), indexOf(), lastIndexOf(), includes()
 
 ### Package Manager
