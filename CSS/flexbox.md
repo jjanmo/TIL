@@ -38,7 +38,7 @@
 
 > 위의 코드를 보면 **부모요소**에 `display : flex`를 설정해주면, **자식요소인 item**은 그에 맞게 `행` 혹은 `열`로 정렬하게 된다.
 
-> flex layout을 이해하기 위해선 가장 중요한 것은 `두 개의 축`을 이해하는 것이다. 이 두 개의 축이 행 혹은 열로 정렬할 수 있는 기준을 정해준다.
+> flex layout을 이해하기 위해선 가장 중요한 것은 `두 개의 축` 이다. 이 두 개의 축이 행 혹은 열로 정렬할 수 있는 기준을 정해준다.
 
 > > 두 개의 축 : `주축(main axis)`과 `교차축(cross axis)`
 
@@ -133,7 +133,7 @@
 -   space-around : 각각 아이템 좌우에 동일한 여백을 준다.
 -   space-evenly: 모든 아이템의 여백을 동일하게 분배해준다.
 
-    ![justify-content](../image/justify-content.PNG)
+    ![justify-content](../image/justify-content.png)
 
 4. align-items
     > `교차축`에서 아이템 배치방법, `justify-content`의 `교차축 버전`이라고 생각하면 된다.
