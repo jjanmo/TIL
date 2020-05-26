@@ -25,5 +25,17 @@ Prototype Link
 # Ref
 
 -   [객체 지향 언어의 두 가지 줄기](http://mohwa.github.io/blog/javascript/2015/10/16/prototype/)
--   [Javascript: prototype 이란\_마이구미의 HelloWorld](https://mygumi.tistory.com/312)<br>
--   [Object prototype 이해하기\_Insanehong](http://insanehong.kr/post/javascript-prototype/)<br>
+
+-   [Javascript: prototype 이란\_마이구미의 HelloWorld](https://mygumi.tistory.com/312)
+
+-   [Object prototype 이해하기\_Insanehong](http://insanehong.kr/post/javascript-prototype/)
+
+- [프로토타입](https://poiemaweb.com/js-prototype)
+- [[속깊은 자바스크립트 강좌] 객체지향의 기본: prototype](https://unikys.tistory.com/316)
+- [Javascript 와 Prototype 프로토 타입](https://medium.com/@pks2974/javascript-%EC%99%80-prototype-%ED%94%84%EB%A1%9C%ED%86%A0-%ED%83%80%EC%9E%85-515f759bff79)
+  
+- [프로토타입 상속](https://ko.javascript.info/prototype-inheritance#ref-1206)
+
+-   [Prototype in JavaScript: it’s quirky, but here’s how it works](https://www.freecodecamp.org/news/prototype-in-js-busted-5547ec68872/)
+
+- [JavaScript — Prototype](https://codeburst.io/javascript-prototype-cb29d82b8809)
