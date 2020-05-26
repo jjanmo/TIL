@@ -208,23 +208,39 @@
 
 > 직접 만들어보자 😎
 
-### 1
+> [여기](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) 문제 입니다.
 
-![flex_example1](../image/flex_example1.png)
+### 1번 문제
 
-> 추가1 : 미디어쿼리(big/middle/small screen)
+![flex_example1](../image/example1.gif)
 
-### 2
+> 화면의 크기에 따라 아이템의 배열이 달라집니다. 하지만 미디어쿼리를 사용하지 않습니다.
 
-![flex_example2](../image/flex_example2.png)
+> [solution](https://codepen.io/team/css-tricks/pen/EKEYob)
 
-> 추가1 : 각 메뉴아이콘(Home/About/Products/Contact)에 hover effect
+> [my solution](flex_mysolution/flex_example1.html)
 
-> 추가2 : 미디어쿼리(big/middle/small screen)
+### 2번 문제
 
-### 3
+![flex_example2](../image/example2.gif)
 
-![flex_example3](../image/flex_example3.png)
+> 화면의 크기에 따라 메뉴 위치가 달라집니다. 미디어쿼리를 사용합니다.
+
+> 추가 :각 메뉴아이콘(Home/About/Products/Contact)에 hover effect
+
+> [solution](https://codepen.io/team/css-tricks/pen/YqaKYR)
+
+> [my solution](flex_mysolution/flex_example2.html)
+
+### 3번 문제
+
+![flex_example3](../image/example3.gif)
+
+> 화면의 크기에 따라 레이아웃이 달라집니다. 미디어쿼리를 사용합니다.
+
+> [solution](https://codepen.io/chriscoyier/pen/vWEMWw)
+
+> [my solution](flex_mysolution/flex_example3.html)
 
 # Ref
 
