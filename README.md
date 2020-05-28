@@ -6,7 +6,7 @@
 
 ### HTML
 
--   semantic tag
+-   [semantic tag](html/semantic.md)
 
 ### CSS
 
