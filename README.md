@@ -43,11 +43,14 @@
 
 2. [Primitive Type(원시자료형)](JavaScript/33Concepts/primitivetype.md)
 
-    - Wrapper Object
     - [Dynamic Type](JavaScript/33Concepts/dynamicType.md)
+    - Wrapper Object
 
 3. [Value Types and Reference Types(값과 참조형)](JavaScript/33Concepts/valueType-vs-referenceType.md)
 4. [Type Coercion(형변환)](JavaScript/33Concepts/coercion.md)
+
+    - [논리연산자( && 와 || )의 이해](JavaScript/33Concepts/logical_operator.md)
+
 5. == vs === ✅
 6. Function Scope, Block Scope and Lexical Scope
 
