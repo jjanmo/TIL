@@ -124,6 +124,8 @@ console.log(darkknight); //Movie {title: "darkknight", released: 2008}
 
 > 엄격모드가 아닌 경우, `this`는 기본적으로 `전역객체`를 나타낸다.
 
+> `일반적으로` 함수가 호출될 때, 예를 들어 `foo()`, this는 `전역객체`를 가르킨다.
+
 > 전역객체란 브라우저에서는 `window 객체`이고 node에서는 `global 객체` 를 의미한다.
 
 ```javascript
