@@ -17,10 +17,10 @@
 
     ```css
     p {
-        margin: 10px; /*상하좌우 모두 같은 값*/
-        margin: 10px 5px; /*상하 좌우 2가지로 나누어서 같은 값*/
-        margin: 10px 5px 20px; /*상 좌우 하 3가지로 나누어서 같은 값*/
-        margin: 5px 10px 15px 20px; /*상 우 하 좌(시계방향) 4가지로 나누어서 같은 값*/
+        margin: 10px; /*상하좌우 모두 같은 값 설정*/
+        margin: 10px 5px; /*상하 좌우 2가지로 나누어서 같은 값 설정*/
+        margin: 10px 5px 20px; /*상 좌우 하 3가지로 나누어서 값 설정*/
+        margin: 5px 10px 15px 20px; /*상 우 하 좌(시계방향) 각각의 값 설정*/
     }
     ```
 
@@ -33,8 +33,14 @@
 -   content는 width와 height로 크기를 조절할 수 있다. 이 때 width와 height가 어느 영역을 의미하는지를 결정하는 property가 box-sizing이다. 2가지의 property값을 갖는다
 
     -   content-box : 기본값, width와 height값이 content영역을 의미한다.
-    -   border-box : width와 height값이 content와 padding과 border를 포함한 영역을 의미한다.
-        > box-sizing을 무엇으로 설정하는냐에 따라서 같은 값의 width와 height일지라도 box크기가 달라질 수 있다.
+    -   border-box : width와 height값이 content와 padding과 border를 포함한 영역을 의미한다. border-box 속성이 박스의 크기를 쉽게 설정할 수 있다.
 
--   box-model 이미지
-    ![box-model](../../image/boxmodel.png)
+
+    > box-sizing을 무엇으로 설정하는냐에 따라서 같은 값의 width와 height일지라도 box크기가 달라질 수 있다.
+
+
+    ![box-model](../image/box-model.png)
+
+# Ref
+
+-[Introduction to Box Model](https://medium.com/altcampus/introduction-to-box-model-e237de4f87a3)
