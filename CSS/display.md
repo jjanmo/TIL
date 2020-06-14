@@ -48,7 +48,7 @@
 -   block 속성과는 다르게 inline은 속성은 한 줄안에 여러 개의 inline속성의 엘리먼트들이 공존할 수 있다.
 -   `width`, `height`, `margin-top`, `margin-bottom`을 설정할 수 없다.(크기 조절 불가능)
 
-![display_inline](../image/display_inline.png)
+![display_inline](../image/display_inline.PNG)
 
 ```HTML
     <span class="box1">box1</span>
