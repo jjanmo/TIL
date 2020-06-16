@@ -130,7 +130,7 @@ console.log(original)  //{ isChanged: false }
 
 ![reason-notpassedbyreference](../../image/notPassedbyreference.png)
 
-## Quiz
+## Quiz1
 
 ```javascript
 function changeStuff(a, b, c) {
@@ -154,6 +154,28 @@ console.log(obj2.item); //3
 <summary>정답</summary>
 <div markdown="1">
 > 10 | changed | unchanged
+</div>
+</details>
+
+## Quiz2
+
+```javascript
+var foo = {
+    bar: 'javascript',
+};
+
+function baz(item) {
+    item = null;
+}
+
+baz(foo);
+console.log(foo); //?
+```
+
+<details>
+<summary>정답</summary>
+<div markdown="1">
+> { bar : 'javascript' }
 </div>
 </details>
 
