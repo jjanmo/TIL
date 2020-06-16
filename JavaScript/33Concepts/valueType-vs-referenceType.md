@@ -179,6 +179,8 @@ console.log(foo); //?
 </div>
 </details>
 
+## [DO YOU WANNA MORE QUIZ ?](quizs.md)
+
 # More
 
 -   Deep Copy & Swallow Copy
