@@ -193,6 +193,10 @@ obj.foo(); //output? 1-55 2-10
 
 > 자세한 부분은 [화살표함수편](arrowfunction.md)에서 계속된다.
 
+# More
+
+-   [**this** Quiz](thisquiz.md)
+
 # Ref
 
 -   [바닐라코딩 this 시리즈](https://www.youtube.com/watch?v=ayyuU0xdbIU&t=304s)
