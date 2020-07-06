@@ -58,35 +58,35 @@
     - [Understanding Variables, Scope, and Hoisting](JavaScript/33Concepts/variables_scope_hoisting.md)
     - [About Arrow Function](JavaScript/33Concepts/arrowfunction.md)
 
-7) Expression vs Statement(표현식과 문장) ✅
-8) IIFE, Modules and Namespaces
-9) Message Queue and Event Loop ✅
-10) setTimeout, setInterval and requestAnimationFrame ✅
-11) JavaScript Engines ✅
-12) Bitwise Operators, Type Arrays and Array Buffers ✅
-13) DOM and Layout Trees
-14) Factories and Classes ✅
-15) this, call, apply and bind
+7. Expression vs Statement(표현식과 문장) ✅
+8. IIFE, Modules and Namespaces
+9. Message Queue and Event Loop ✅
+10. setTimeout, setInterval and requestAnimationFrame ✅
+11. JavaScript Engines ✅
+12. Bitwise Operators, Type Arrays and Array Buffers ✅
+13. DOM and Layout Trees
+14. Factories and Classes ✅
+15. this, call, apply and bind
     - [this for beginner](JavaScript/33Concepts/this.md)
     - [call() vs apply() vs bind()](JavaScript/33Concepts/call_apply_bind.md)
-16) new, Constructor, instanceof and Instances ✅
-17) Prototype Inheritance and Prototype Chain(프로토타입의 상속과 체인)
-18) Object.create and Object.assign ✅
-19) map, reduce, filter ✅
-20) Pure Functions, Side Effects and State Mutation
-21) Closures ✅
-22) High Order Functions(고차함수) ✅
-23) Recursion
-24) Collections and Generators
-25) Promises ✅
-26) async/await ✅
-27) Data Structures
-28) Expensive Operation and Big O Notation
-29) Algorithms
-30) Inheritance, Polymorphism and Code Reuse
-31) Design Patterns
-32) Partial Applications, Currying, Compose and Pipe
-33) Clean Code
+16. [new, Constructor, instanceof and Instances](JavaScript/33Concepts/constructor.md)
+17. [Prototype Inheritance and Prototype Chain(프로토타입의 상속과 체인)](JavaScript/33Concepts/prototype.md)
+18. Object.create and Object.assign ✅
+19. map, reduce, filter ✅
+20. Pure Functions, Side Effects and State Mutation
+21. Closures ✅
+22. High Order Functions(고차함수) ✅
+23. Recursion
+24. Collections and Generators
+25. Promises ✅
+26. async/await ✅
+27. Data Structures
+28. Expensive Operation and Big O Notation
+29. Algorithms
+30. Inheritance, Polymorphism and Code Reuse
+31. Design Patterns
+32. Partial Applications, Currying, Compose and Pipe
+33. Clean Code
 
 -   Array
     -   [Array methods 1탄](JavaScript/array/arrayMethod1.md)
