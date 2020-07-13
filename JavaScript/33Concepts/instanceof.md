@@ -116,6 +116,10 @@ console.log(c instanceof C); //12
 -   9번라인 : B1의 prototype 프로퍼티로 할당되어 b의 **proto**는 B1의 프로토타입 객체를 가르키고 있다. 그래서 결과값은 true이다.
 -   10번라인 : 이 코드 역시 인스턴스 객체 b의 프토토타입 체인을 확인하는 것으로서 위에서처럼 프로토타입 객체가 연결되었기 때문에 true가 출력된다.
 
+    ![more](../../image/instanceof_more.png)
+
+> 코드 상황을 간단하게 이미지로 표현하면 위와 같다.
+
 # Ref
 
 -   [MDN\_객체지향 자바스크립트 개요](https://developer.mozilla.org/ko/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript)
