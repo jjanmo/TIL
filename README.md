@@ -74,9 +74,9 @@
 18. Object.create and Object.assign ✅
 19. map, reduce, filter ✅
 20. Pure Functions, Side Effects and State Mutation
-21. Closures ✅
+21. [Closures](JavaScript/33Concepts/closure.md)
 22. High Order Functions(고차함수) ✅
-23. Recursion
+23. Recursion ✅
 24. Collections and Generators
 25. Promises ✅
 26. async/await ✅
