@@ -10,6 +10,12 @@
     -   `함수 코드(함수 안에 작성된 코드)` 🧷 `function object`의 `[[Code]]` 프로퍼티에 설정
     -   호출한 함수의 `인자(parameter값)` 🧷 `Argument object`에 설정
 
+## Execution Context has two phases
+
+-   Creation phase
+
+-   Code execution phase
+
 ### 실행 컨텍스트의 구성
 
 > 아래 코드의 실행 컨텍스트 처리 과정을 정리해보기
@@ -92,3 +98,5 @@ obj.getTotal(11, 22, 55);
 -   [자바스크립트 중고급자 되기: 근본 핵심 이해](https://www.inflearn.com/course/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%A4%91%EA%B3%A0%EA%B8%89)
 
 -   [모던 자바스크립트 입문 8장](http://www.yes24.com/Product/Goods/59410698)
+
+*   [](https://blog.bitsrc.io/understanding-execution-context-and-execution-stack-in-javascript-1c9ea8642dd0))
