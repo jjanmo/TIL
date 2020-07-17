@@ -12,18 +12,26 @@
 
 ## 순열(Factorial)
 
+```javascript
+```
+
 ## 조합(Combination)
+
+```javascript
+```
 
 ## 주어진 문자열이 회문인지 판단하기
 
-## 퀵정렬(Quick sort)
+> 회문(Palindrome)이란 문자열을 거꾸로 해도 원래의 문자열과 같은 문자열인 특징을 가지고 있는 문자열을 말한다. ex) 'abcba'
 
-## 하노이의 탑(Hanoi tower)
+```javascript
+```
+
+## 퀵정렬(Quick sort)
 
 # 재귀와 동적프로그래밍(Dynamic Programming)
 
-> 회문(Palindrome)이란 문자열을 거꾸로 해도 원래의 문자열과 같은 문자열인 특징을 가지고 있는 문자열을 말한다. ex) 'abcba'
-
 # Ref
 
--   []()
+-   [칸아카데미]()
+-
