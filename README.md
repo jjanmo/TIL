@@ -98,8 +98,6 @@
 32. Partial Applications, Currying, Compose and Pipe
 33. Clean Code
 
--   Array
-
 ### Package Manager
 
 -   [NPM(Node Package Manager)](PackageManager/NPM.md)
