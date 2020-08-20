@@ -102,10 +102,23 @@ console.log(c instanceof C); //12
 4   console.log(prototypeB === b.__proto__);
 5
 6   B1.prototype = prototypeB;
-7
-8   console.log(b.__proto__ === B1.prototype);
-9   console.log(b instanceof B1);
+7   prototypeB.constructor = B1;
+8
+9   console.log(b.__proto__ === B1.prototype);
+10   console.log(b instanceof B1);
 ```
+
+-   1번라인 : 사라진 B.prototype의 생성자로 연결시켜줄 생성자 함수를 만든다.
+-   3번라인 : 현재 B.prototype을 유일하게 참조하고 있는 인스턴스 객체 b로 부터 B.prototype(프로토타입 객체)를 얻는다.
+-   4번라인 : 3번라인을 확인한 것으로 true라는 결과값을 출력한다.
+-   6번라인 : 생성자 함수 B1의 prototype 프로퍼티에 B.prototype인 prototypeB(프로토타입 객체)를 할당한다.
+-   7번라인 : 여기서 하려는 작업과 필요한 작업인지 궁금할 수 있겠는데, prototype 프로퍼티와 constructor 프로퍼티는 짝이나 마찬가지이다. 당연히 있어야 하는 것들이기 때문에 사용여부에 관계없이 상호 참조하도록 맞춰주는 것이 좋다.
+-   9번라인 : B1의 prototype 프로퍼티로 할당되어 b의 **proto**는 B1의 프로토타입 객체를 가르키고 있다. 그래서 결과값은 true이다.
+-   10번라인 : 이 코드 역시 인스턴스 객체 b의 프토토타입 체인을 확인하는 것으로서 위에서처럼 프로토타입 객체가 연결되었기 때문에 true가 출력된다.
+
+    ![more](../../image/instanceof_more.png)
+
+> 코드 상황을 간단하게 이미지로 표현하면 위와 같다.
 
 # Ref
 
