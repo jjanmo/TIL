@@ -39,7 +39,7 @@
     > box-sizing을 무엇으로 설정하는냐에 따라서 같은 값의 width와 height일지라도 box크기가 달라질 수 있다.
 
 
-    ![box-model](../image/box-model.png)
+![box-model](../image/box-model.PNG)
 
 # Ref
 
