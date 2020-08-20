@@ -69,7 +69,9 @@
 15. this, call, apply and bind
     - [this for beginner](JavaScript/33Concepts/this.md)
     - [call() vs apply() vs bind()](JavaScript/33Concepts/call_apply_bind.md)
-16. [new, Constructor, instanceof and Instances](JavaScript/33Concepts/constructor.md)
+16. new, Constructor, instanceof and Instances
+    - [instanceof](JavaScript/33Concepts/instanceof.md)
+
 17. [Prototype Inheritance and Prototype Chain(프로토타입의 상속과 체인)](JavaScript/33Concepts/prototype.md)
 18. Object.create and Object.assign ✅
 19. map, reduce, filter ✅
