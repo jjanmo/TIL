@@ -28,6 +28,12 @@
 
 ![flow](../../image/DOM_flow.png)
 
+![DOM_objects](../../image/DOM_objects.PNG)
+
+> DOM object간의 상속 관계도(구조)
+
+<br/>
+
 ## How to make DOM
 
 > DOM이 만들어 지는 과정
@@ -182,8 +188,14 @@
 
     > 위의 메소드를 자식 엘리먼트로 1개만 추가가 가능하다. `append(element1, element2 ...)`는 자식 엘리먼트로 여러 개를 새로운 엘리먼트를 순서대로 추가할 수 있다.
 
+# More
+
+-   [appendChild()에 대해서]()
+
 # Ref
 
 -   [DOM MDN](https://developer.mozilla.org/ko/docs/Web/API/Document_Object_Model/%EC%86%8C%EA%B0%9C)
 
 -   [객체 모델 생성](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/constructing-the-object-model?hl=ko)
+
+-   [The Document Object Model](https://web.stanford.edu/class/cs98si/slides/the-document-object-model.html)
