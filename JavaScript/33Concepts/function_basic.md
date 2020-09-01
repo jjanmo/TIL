@@ -112,7 +112,7 @@ console.log(test); //6
 
 # More
 
--   [Arrow Function(화살표 함수)](arrowfunction.md)
+-   [About Arrow Function(화살표 함수)](arrowfunction.md)
 -   High Order Functions(고차함수) & First Class Object (1급객체)
 
 # Ref

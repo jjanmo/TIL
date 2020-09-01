@@ -1,4 +1,6 @@
-# Materialize CSS가 무엇일까?
+# Introduction of Materialize CSS
+
+> Materialize CSS에 대한 간단한 소개
 
 > Materialize CSS를 알기 위해선 먼저 **Material Design**이 무엇인지 알아야 한다.
 
