@@ -130,7 +130,9 @@
 
 - [ ] Pure Functions, Side Effects and State Mutation
 - [ ] [Closures](JavaScript/33Concepts/closure.md)
-- [ ] High Order Functions(고차함수)
+
+- [ ] [High Order Functions](JavaScript/33Concepts/highOrderFunctions.md)
+
 - [ ] [Recursion](JavaScript/33Concepts/recursion.md)
 - [ ] Collections and Generators
 - [ ] Promises
