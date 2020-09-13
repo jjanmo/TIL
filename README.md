@@ -154,7 +154,7 @@
 
 ## Package Manager
 
-- [ ] [NPM(Node Package Manager)](PackageManager/NPM.md)
+- [x] [NPM(Node Package Manager)](PackageManager/what_is_NPM.md)
 
 ## Build Tool
 

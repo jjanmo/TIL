@@ -15,12 +15,12 @@
 ```javascript
 //function declaration
 function myName(name) {
-    console.log(name);
+	console.log(name);
 }
 
 //function expression
 const greeting = function (name) {
-    console.log('Hello' + name);
+	console.log('Hello' + name);
 };
 
 //arrow function
@@ -37,14 +37,14 @@ const name = (name) => console.log(name);
 
 > 매개변수와 인수
 
--   이 둘은 함수에서 사용되는 용어인데 정확하게 구분하여 사용하지 않는 경향이 있는 것 같다. 함수의 어느 과정에서 사용하는냐에 따라서 위 용어는 구분하여 사용하는 것이 맞다고 생각한다.
+- 이 둘은 함수에서 사용되는 용어인데 정확하게 구분하여 사용하지 않는 경향이 있는 것 같다. 함수의 어느 과정에서 사용하는냐에 따라서 위 용어는 구분하여 사용하는 것이 맞다고 생각한다.
 
 ```javascript
 const hisName = 'jjanmo';
 
 function sayHello(name) {
-    //- 1
-    console.log('Hello' + name);
+	//- 1
+	console.log('Hello' + name);
 }
 
 sayHello(hisName);
@@ -60,11 +60,11 @@ sayHello(hisName);
 
 ### Invoke 사전적 정의
 
--   `invoke` : to call on something or someone ( @Cambridge Dictionary )
+- `invoke` : to call on something or someone ( @Cambridge Dictionary )
 
 ### 그렇다면 invoke a funcion은 call a function과 같은 말인가?
 
--   사전적으로 혹은 일반적으로 `함수를 호출한다` 라는 같은 의미로 사용될 수 있다. 하지만 자바스크립트에서는 `미묘하게 차이`가 있을 수 있다.
+- 사전적으로 혹은 일반적으로 `함수를 호출한다` 라는 같은 의미로 사용될 수 있다. 하지만 자바스크립트에서는 `미묘하게 차이`가 있을 수 있다.
 
 ### 어떤 미묘한 차이?
 
@@ -84,17 +84,17 @@ fn.apply(); //3
 
 ## Function return
 
--   모든 자바스크립트의 함수에서는 특별하게 return값을 지정하지 않는다면 `undifined`를 return한다. 그렇기 때문에 콘솔창에서 return값이 없는 함수를 호출할 경우 `undefined`가 찍히는 것 본 경우가 있을 것이다.
+- 모든 자바스크립트의 함수에서는 특별하게 return값을 지정하지 않는다면 `undifined`를 return한다. 그렇기 때문에 콘솔창에서 return값이 없는 함수를 호출할 경우 `undefined`가 찍히는 것 본 경우가 있을 것이다.
 
--   `return`문은 함수를 멈추는 기능을 한다. `return` 이후에 어떠한 코드가 있다면 그 코드는 (일반적으로) 작동하지않는다.
+- `return`문은 함수를 멈추는 기능을 한다. `return` 이후에 어떠한 코드가 있다면 그 코드는 (일반적으로) 작동하지않는다.
 
--   함수의 리턴은 값을 리턴하기도 하지만, 함수를 부른 `caller`에게 그 값을 할당하기도 한다. (예제 코드)
+- 함수의 리턴은 값을 리턴하기도 하지만, 함수를 부른 `caller`에게 그 값을 할당하기도 한다. (예제 코드)
 
 ```javascript
 let double = function (num) {
-    //함수를 변수에 할당
+	//함수를 변수에 할당
 
-    return num * 2;
+	return num * 2;
 };
 
 let test = double(3);
@@ -105,15 +105,15 @@ console.log(test); //6
 
 ## Function is Object
 
--   자바스크립트에서의 `Object`는 primitive type(원시자료형) 아닌 모든 것이다. 그렇기 때문에 `Function`도 역시 `Object` 이다.
--   자바스크립트의 `Object`는 다재다능하기때문에 `Function` 역시 그러하다.
--   `High Order Functions` 란 함수를 parameter로 전달받거나 함수를 결과로 반환하는(return) 함수를 말한다.
-    > `High Order Functions`란 함수의 다재다능함을 나타내는 다른 표현이라고 생각한다.
+- 자바스크립트에서의 `Object`는 primitive type(원시자료형) 아닌 모든 것이다. 그렇기 때문에 `Function`도 역시 `Object` 이다.
+- 자바스크립트의 `Object`는 다재다능하기때문에 `Function` 역시 그러하다.
+- `High Order Functions` 란 함수를 parameter로 전달받거나 함수를 결과로 반환하는(return) 함수를 말한다.
+  > `High Order Functions`란 함수의 다재다능함을 나타내는 다른 표현이라고 생각한다.
 
 # More
 
--   [About Arrow Function(화살표 함수)](arrowfunction.md)
--   High Order Functions(고차함수) & First Class Object (1급객체)
+- [About Arrow Function(화살표 함수)](arrowfunction.md)
+- [High Order Functions(고차함수)](highOrderFunctions.md)
 
 # Ref
 
