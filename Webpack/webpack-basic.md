@@ -77,11 +77,7 @@ module.exports = {
 
 - `path`는 실제 결과값의 위치를 `절대경로`로서 지정해 주는 것이다. 여기서 node.js의 path 모듈을 사용한다.
 
-> `path.resolve(__dirname + '/dist')` 의미
-
-- `path.resolve()`는 `/dist`가 `절대경로`를 갖을 때까지 앞의 문자열(`__dirname`)을 이어붙여서 주소를 리턴한다. 만약에 앞의 문자열을 모두 사용했음에도 절대경로를 얻지 못했다면, `현재워킹디렉토리`를 사용한다.
-
-- `__dirname`은 현재 실행 중인 폴더(디렉토리) 이름을 반환한다.
+  > **[참고]** [path module](https://nodejs.org/api/path.html)
 
 ### Loaders
 
