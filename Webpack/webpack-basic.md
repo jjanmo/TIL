@@ -1,6 +1,14 @@
+# Webpack Configuration
+
+`npm install -D webpack webpack-cli`:
+
+> webpack-cli : command line에서 webpack명령어를 사용할 수 있게 해준다.
+
+<br />
+
 # Core Concepts
 
-> 기본적으로 웹팩은 `Mode, Entry, Output` 이 3가지의 옵션이 필요합니다. 이것을 `cli 명령어`를 통해서도 가능하다.
+> 기본적으로 웹팩은 `Mode, Entry, Output, Loader, Plugin` 옵션을 설정합니다. 이것을 `cli 명령어`를 통해서도 가능하다.
 
 `node_modules/.bin/webpack --mode development --entry ./scr/app.js --output dist/main.js`
 
