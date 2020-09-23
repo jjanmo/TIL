@@ -209,7 +209,185 @@ module.exports = {
 
 `sass-loader`:
 
+<br />
+
 ### Plugins
+
+> 플러그인은 로더와 비교할 수 있다. 로더는 파일 단위로 실행되고 그 파일을 모듈화한다. 반면 플러그인은 최종 빌드된(번들링된) 결과물 단위로 실행된다. 즉 최종 결과물에 추가적인 작업을 하고 싶을 때 플러그인을 추가하여 실행한다.
+
+![webpack-plugin](../image/webpack-plugin.png)
+
+> 전체 흐름에서 흰색 박스가 플러그인이 실행되는 시점이다.
+
+```javascript
+module.exports = {
+	//...
+	plugins: [
+		//new 연산자를 통한 인스턴스 생성
+	],
+};
+```
+
+> 플러그인이라는 배열 안에 해당 플러그인의 생성자 함수를 new연산자와 함께 실행시켜서 그 인스턴스를 요소로서 추가한다.(플러그인은 모두 class로 )
+
+#### 대표적인 플러그인들
+
+`BannerPlugin`:
+
+- 웹팩에서 기본적으로 제공해주는 플러그인으로서 따로 설치할 필요가 없다.
+
+- 배너의 원의미는 길쭉한 현수막으로서 특정 의미나 표식을 담고 있는 것을 말한다. 이와 같이 BannerPlugin 은 최종결과물 맨 위에 주석처리로 원하는 표시, 문자등을 추가 할 수 있게 해주는 플러그인이다.
+
+  > 일반적으로 빌드 정보, 커밋 버전 혹은 시간등의 정보를 나타낸다.
+
+  ```javascript
+  const webpack = require('webpack');
+  //웹팩의 기본 플러그인인 경우 위에 처럼 webpack을 가져온 후 사용한다.
+  //node 기반의 웹팩이기 때문에 CommonJS스타일로 작성해준다. 참고로 웹팩의 설정파일에서는 자바스크립트만 읽을 수 있다.
+
+  module.exports = {
+  	//....
+
+  	//string
+  	plugins : [
+  		new webpack.BannerPlugin({
+  			banner : 'Hello World'
+  		});
+  	]
+  	//or
+
+  	//function
+  	plugins : [
+  		new webpack.BannerPlugin({
+  			banner : (something) =>`something : ${something}`;
+  	]
+  }
+  ```
+
+  > BannerPlugin의 인자로서는 문자열 혹은 함수로도 전달될 수 있다.
+
+`DefinePlugin`:
+
+- 웹팩에서 기본적으로 제공해주는 플러그인으로서 따로 설치할 필요가 없다.
+
+- DefinePlugin은 컴파일시 사용할 수 있는 전역변수를 생성할 수 있게 해준다.
+
+- **활용**
+
+  > 어플리케이션의 개발 환경은 모드(development, production)에 따라서 상황이 필요한 환경변수들이 달라질 수 있다.(ex. API주소 등등) 이럴 때 일일히 환경에 따라서 셋팅하는 것보다 환경변수에 따라서 셋팅이 될 수 있게 만들어 주면 에러가 발생할 확률이 낮아질 수 있다.
+
+  > > 환경 의존적인 변수를 소스가 아닌 다른 곳에서 관리한다는 개념
+
+- DefinePlugin는 `node의 환경변수(process.env.NODE_ENV)`를 기본적으로 주입해준다.
+
+  > node로 실행한 프로그램에서는 process라는 객체에 여러 가지의 시스템 정보(+설정된 값)가 담겨있다. 그 중에 `process.env`라 함은 시스템에서 설정한 값을 가져올 수 있다.(여기서 시스템은 서버를 말한다.) 여기서 `process.env.NODE_ENV` 처럼 `NODE_ENV`라는 환경변수를 설정하고 이를 코드에서 사용할 수 있다.
+
+  > DefinePlugin에서는 `process.env.NODE_ENV`을 기본적으로 설정해준다. 좀 더 정확히 말하면, Node의 환경 변수를 설정하는 것은 아니고, <u>webpack 설정시 mode의 값을 여기서 할당</u>한다고 생각하면 된다. 어플리케이션에서 설정없이도 이 값을 사용할 수 있게 된다.
+
+  ```javascript
+  module.exports = {
+  	//...
+
+  	plugins: [
+  		new webpack.DefinePlugin({
+  			//여기와 key : value 로 직접 환경변수를 설정할 수 있다.
+  			NAME: 'jjanmo',
+  			DEV_URL: JSON.stringify('https://dev.example.com'),
+  		}),
+  	],
+  };
+
+  //어플리케이션에서 사용법
+  if (process.env.NODE_ENV === 'development') const url = DEV_URL;
+  ```
+
+  > { } 안에 직접 변수를 넣어서 어플리케이션 상에서 전역변수로서 키값을 사용하여 접근이 가능하다. 개발 환경에 따른 환경 변수를 위와 같은 형태로 설정해줄 수 있다.
+
+`HtmlWebpackPlugin`:
+
+- 3rd party 플러그인으로서 설치가 필요하다.
+
+- 웹팩으로 빌드한 결과물로서 HTML파일도 포함될 수 있도록 만들어 주는 플러그인이다
+
+- **주의** 이 플러그인을 사용하게 되면 외부에 있던 index.html의 위치가 변경되기 때문에 경로 설정이 변경되는 부분이 존재하게 되기때문에 이를 수정해주어야만한다.(ex. image관련 file-loader 등등)
+
+  ```javascript
+  module.exports = {
+  	//...
+  	plugins: [
+  		new HtmlWebpackPlugin({
+  			template: './src/index.html',
+  			templateParameter: {
+  				env: process.env.NODE_ENV === 'development' ? '(개발용)' : '',
+  			},
+  			minify: {
+  				collapsWhitespace: true,
+  				removeComments: true,
+  			},
+  		}),
+  	],
+  };
+  ```
+
+  > `template` 는 HTML 파일의 경로를 설정한다. `templateParameter`은 HTML 파일에 넣어줄 변수를 설정한다.
+
+- 이외에도 HTML파일을 압축하고, 주석을 없애는 등의 옵션을 추가할 수 있다. [참고\_추가옵션](https://github.com/jantimon/html-webpack-plugin#options)
+
+`CleanWebpackPlugin`:
+
+- 3rd party 플러그인으로서 설치가 필요하다.
+
+- 빌드할 때마다 output 폴더를 삭제하고 난 후 다시 빌드를 하게 하는 역할을 갖는 플러그인이다.
+
+  ```javascript
+  const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+  //default로 export 되어있지 않기 때문에 주의!
+
+  module.exports = {
+  	//...
+  	plugins: [new CleanWebpackPlugin()],
+  };
+  ```
+
+`MiniCssExtractPlugin`:
+
+- 3rd party 플러그인으로서 설치가 필요하다.
+
+- CSS파일이 많아짐에 따라서 웹팩으로 빌드되는 JS파일도 커지게 된다. 그렇게 되면 파일 하나를 로딩하는 것이 오히려 페이지 성능에 부담으로 작용할 수 있다. 이러한 부담을 줄이기 위해선 CSS파일을 분리하여 JS파일과 CSS파일을 따로 관리하는 것이 좋다. 이런 상황에서 사용하기 위한 플러그인이 `MiniCssExtractPlugin` 이다.
+
+- 다른 플러그인과 다르게 플러그인 설정과 함께 로더 설정도 해주어야만 한다. 이 플러그인을 사용하기 위해선 style-loader 대신 자체적으로 내장된 로더를 사용하는 것이 좋다.
+
+  > **TIP** 이러한 부분은 process.env.NODE_ENV에 따라서 다르게 설정해주는 것이 좋다. 또한 플러그인에서도 다르게 설정해주었기 때문에 설정이 이어지는 부분이 있다.
+
+  ```javascript
+  const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
+  module.exports = {
+  	//...
+  	module : {
+  		rules : [
+  			{
+  				test : /\.css$/,
+  				use : [
+  					(process.env.NODE_ENV === 'developemnt'
+  					? 'style-loader'
+  					: MiniCssExtractPlugin.loader),
+  					'css-loader'
+  				]
+  			}
+  		]
+  	}
+
+  	plugins: [
+  		...(process.env.NODE_ENV === 'development'
+  			? []
+  			: [new MiniCssExtractPlugin({ filename : '[name].css'})]
+  			)
+  		],
+  };
+  ```
+
+  > 개발 환경에서는 JS파일 1개로 띄우는 것이 조금 더 빠를 수 있다. 그래서 플러그인 설정을 환경에 따라서 다르게 주는 것 좋다. 또한 `[name]` 설정을 안해주면 hash값으로 파일 이름이 설정되기 때문에 이 설정도 해준다.
 
 <br />
 
@@ -218,3 +396,7 @@ module.exports = {
 - [웹팩 핸드북](https://joshua1988.github.io/webpack-guide/motivation/why-webpack.html#%EC%9B%B9%ED%8C%A9%EC%9D%98-%EB%93%B1%EC%9E%A5-%EB%B0%B0%EA%B2%BD)
 
 - [프론트엔드 개발환경의 이해](https://jeonghwan-kim.github.io/series/2019/12/10/frontend-dev-env-webpack-basic.html)
+
+- [프론트엔드 개발환경의 이해와 실습 : 강의](https://www.inflearn.com/course/%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C-%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD)
+
+- [웹팩 공식문서](https://webpack.js.org/plugins/)
