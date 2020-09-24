@@ -274,20 +274,20 @@ module.exports = {
 
   > 웹팩에서 설정 파일 안의 sass-loader를 읽고 실행시키면 `sass-loader`가 sass파일을 로딩하고 node-sass를 실행시킨다. 이어서 `node-sass`가 sass파일을 css파일로 컴파일한다.
 
-```javascript
-module: {
-	rules: [
-		{
-			test: /\.s[ac]ss$/,
-			use: [
-				'style-loader', // create style node(inline style) from JS string
-				'css-loader', // translate css to commonJS
-				'sass-loader', // compiles sass to css
-			],
-		},
-	];
-}
-```
+  ```javascript
+  module: {
+  	rules: [
+  		{
+  			test: /\.s[ac]ss$/,
+  			use: [
+  				'style-loader', // create style node(inline style) from JS string
+  				'css-loader', // translate css to commonJS
+  				'sass-loader', // compiles sass to css
+  			],
+  		},
+  	];
+  }
+  ```
 
 <br />
 
