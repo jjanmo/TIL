@@ -167,7 +167,7 @@
   - [ ] Webpack
 
     - [x] [Intro](Webpack/webpack-intro.md)
-    - [ ] [Basic](Webpack/webpack-basic.md)
+    - [x] [Basic](Webpack/webpack-basic.md)
 
   - [ ] Parcel
 

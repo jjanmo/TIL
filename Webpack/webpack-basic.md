@@ -207,6 +207,8 @@ module.exports = {
 
 `babel-loader`:
 
+> babel-loader는 바벨은 웹팩에서 사용하기 위해서 필요한 로더이다. 바벨에 대해서 간략하게 알아보고 바벨 설정과 웹팩과의 통합 설정 과정을 통해서 어떠한 일들이 일어나는지 알아보자.
+
 - 바벨이란 ES6버전의 자바스크립트 코드를 어떠한 브라우저에서도 일관된 자바스크립트 코드로서 사용하기 위해서 나온 `transpiler` 이다. 즉 ES6에서 ES5로 자바스크립트 코드를 만들어준다.
 
 - 바벨은 3단계에 걸쳐서 코드의 변환을 진행한다. 첫번째는 코드를 읽고 추상구문트리(AST)로 `파싱`하는 단계이다.(간단하게 고수준의 코드를 기계어로 바꾸는 단계라고 생각하자!) 두번째는 추상구문트리를 각 환경에 맞게 일관된 코드로 변환시키는 작업을 한다. 여기서 `플러그인`이 관여한다. 세번째 단계는 변환된 코드를 출력하는 단계이다.
@@ -264,6 +266,29 @@ module.exports = {
 
 `sass-loader`:
 
+- sass파일을 웹팩으로 로딩하고 CSS로 컴파일하는데 필요한 로더이다.
+
+- `npm install -D sass-loader node-sass`가 필요하다.
+
+  > 난 sass를 설치하였다. sass는 dart-sass의 버전 중에 한 가지라고 한다. sass-loader를 사용하기 위해서는 < <u>node-sass나 dart-sass 둘 중 한 가지</u>가 필요하다.
+
+  > 웹팩에서 설정 파일 안의 sass-loader를 읽고 실행시키면 `sass-loader`가 sass파일을 로딩하고 node-sass를 실행시킨다. 이어서 `node-sass`가 sass파일을 css파일로 컴파일한다.
+
+```javascript
+module: {
+	rules: [
+		{
+			test: /\.s[ac]ss$/,
+			use: [
+				'style-loader', // create style node(inline style) from JS string
+				'css-loader', // translate css to commonJS
+				'sass-loader', // compiles sass to css
+			],
+		},
+	];
+}
+```
+
 <br />
 
 ### Plugins
@@ -283,7 +308,7 @@ module.exports = {
 };
 ```
 
-> 플러그인이라는 배열 안에 해당 플러그인의 생성자 함수를 new연산자와 함께 실행시켜서 그 인스턴스를 요소로서 추가한다.(플러그인은 모두 class로 )
+> 플러그인이라는 배열 안에 해당 플러그인의 생성자 함수를 new 연산자와 함께 실행시켜서 그 인스턴스를 요소로서 추가한다.(플러그인은 모두 `class`로 만들어지기 때문에 위와 같이 설정한다.)
 
 #### 대표적인 플러그인들
 
