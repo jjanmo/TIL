@@ -109,11 +109,7 @@
 ## 세미콜론과 쉼표의 역할
 
 ```javascript
-const number = 10;
-let name = 'jjanmo';
-function add(x, y) {
-    return x + y;
-}
+const number = 10; function add(x, y) { return x + y; }; let name = 'jjanmo'; 
 ```
 
 > 세미콜론을 통해서 여러 줄의 문을 한 줄의 문으로 나타낼 수 있다. 세미콜론은 문을 연결할 수 있는 기능을 갖는다.
