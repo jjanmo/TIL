@@ -96,7 +96,7 @@
     -   [Variables & Scope](JavaScript/33Concepts/variables_scope_hoisting.md)
     -   [About Arrow Function](JavaScript/33Concepts/arrowfunction.md)
 
--   [ ] Expression vs Statement(표현식과 문장)
+-   [x] [Expression vs Statement(표현식과 문장)](JavaScript/33Concepts/expression&statement.md)
 -   [ ] IIFE, Modules and Namespaces
 -   [ ] Message Queue and Event Loop
 -   [ ] setTimeout, setInterval and requestAnimationFrame
@@ -141,7 +141,6 @@
 -   [ ] Design Patterns
 -   [ ] Partial Applications, Currying, Compose and Pipe
 -   [ ] Clean Code
-
 -   [ ] Data Structures
 -   [ ] Expensive Operation and Big O Notation
 -   [ ] Algorithms
