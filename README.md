@@ -9,8 +9,8 @@
 ## General Web(Internet)
 
 -   [ ] 인터넷을 어떻게 작동될까?
--   [ ] HTTP란 무엇일까?
--   [x] 브라우저의 동작 원리
+-   [x] [HTTP란 무엇일까?](General/http.md)
+-   [x] [브라우저의 동작 원리](General/how-browsers-work.md)
 -   [ ] Domain Name이란 무엇일까?
 -   [ ] DNS의 작동 원리
 -   [ ] Hosting은 무엇일까?
