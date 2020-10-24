@@ -141,9 +141,10 @@
 -   [ ] Design Patterns
 -   [ ] Partial Applications, Currying, Compose and Pipe
 -   [ ] Clean Code
--   [ ] Data Structures
+
 -   [ ] Expensive Operation and Big O Notation
--   [ ] Algorithms
+-   [x] [Data Structures & Algorithms](https://github.com/jjanmo/ds-algo)
+    > 이 부분은 따로 저장소를 만들어서 정리 중이다.
 
 ## Modular JavaScript & ES6+
 
