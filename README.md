@@ -156,6 +156,8 @@
 
 -   [x] [NPM(Node Package Manager)](PackageManager/what_is_NPM.md)
 
+-   [x] [Semantic Version](PackageManager/semantic_versioning.md)
+
 ## Build Tool
 
 -   Task Runner
