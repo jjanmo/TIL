@@ -134,12 +134,19 @@
 - [ ] [High Order Functions](JavaScript/33Concepts/highOrderFunctions.md)
 
 - [ ] [Recursion](JavaScript/33Concepts/recursion.md)
-- [ ] Collections and Generators
-- [ ] Promises
+
+- [ ] [Promises](JavaScript/33Concepts/promises.md)
+
 - [ ] async/await
+
+- [ ] Collections and Generators
+
 - [ ] Inheritance, Polymorphism and Code Reuse
+
 - [ ] Design Patterns
+
 - [ ] Partial Applications, Currying, Compose and Pipe
+
 - [ ] Clean Code
 
 - [ ] Expensive Operation and Big O Notation
