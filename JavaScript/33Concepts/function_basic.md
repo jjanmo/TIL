@@ -15,12 +15,12 @@
 ```javascript
 //function declaration
 function myName(name) {
-	console.log(name);
+  console.log(name);
 }
 
 //function expression
 const greeting = function (name) {
-	console.log('Hello' + name);
+  console.log('Hello' + name);
 };
 
 //arrow function
@@ -43,8 +43,8 @@ const name = (name) => console.log(name);
 const hisName = 'jjanmo';
 
 function sayHello(name) {
-	//- 1
-	console.log('Hello' + name);
+  //- 1
+  console.log('Hello' + name);
 }
 
 sayHello(hisName);
@@ -92,9 +92,9 @@ fn.apply(); //3
 
 ```javascript
 let double = function (num) {
-	//함수를 변수에 할당
+  //함수를 변수에 할당
 
-	return num * 2;
+  return num * 2;
 };
 
 let test = double(3);
@@ -109,11 +109,6 @@ console.log(test); //6
 - 자바스크립트의 `Object`는 다재다능하기때문에 `Function` 역시 그러하다.
 - `High Order Functions` 란 함수를 parameter로 전달받거나 함수를 결과로 반환하는(return) 함수를 말한다.
   > `High Order Functions`란 함수의 다재다능함을 나타내는 다른 표현이라고 생각한다.
-
-# More
-
-- [About Arrow Function(화살표 함수)](arrowfunction.md)
-- [High Order Functions(고차함수)](highOrderFunctions.md)
 
 # Ref
 

@@ -12,23 +12,23 @@
 
 ### Call Stack(호출스택)
 
--   함수들이 호출되는 상태를 기록하는 논리적인 구조이다. 함수가 호출될 때마다 스택프레임이 생성되고 콜스택의 맨 위에 올라간다(push). 호출된 함수의 결과값이 반환하면 콜스택에 올라간 스택프레임은 제거된다(pop).
+- 함수들이 호출되는 상태를 기록하는 논리적인 구조이다. 함수가 호출될 때마다 스택프레임이 생성되고 콜스택의 맨 위에 올라간다(push). 호출된 함수의 결과값이 반환하면 콜스택에 올라간 스택프레임은 제거된다(pop).
 
--   자바스크립트는 기본적으로 비동기적 작동하지만, 콜스택 자체에서는 **동기적**으로 작동한다. 비동기적인 작동하기 위해서는 콜스택뿐만 아니라 이벤트루프 등으로 인해 동시성을 보장받게 된다.(비동기적 작동을 가능하게 해준다)
+- 자바스크립트는 기본적으로 비동기적 작동하지만, 콜스택 자체에서는 **동기적**으로 작동한다. 비동기적인 작동하기 위해서는 콜스택뿐만 아니라 이벤트루프 등으로 인해 동시성을 보장받게 된다.(비동기적 작동을 가능하게 해준다)
 
 ```javascript
 function a() {
-    b(); //3
-    console.log('a'); //5
+  b(); //3
+  console.log('a'); //5
 }
 
 function b() {
-    console.log('b'); //4
+  console.log('b'); //4
 }
 
 function c() {
-    a(); //2
-    console.log('c'); //6
+  a(); //2
+  console.log('c'); //6
 }
 
 c(); //1
@@ -39,33 +39,28 @@ c(); //1
 ![callstack1](../../image/callstack1.png)
 ![callstack2](../../image/callstack2.png)
 
--   `Uncaught RangeError: Maximum call stack size exceeded` : 이런 에러가 뜨기도 한다. 보통 재귀적구현을 할 때 재귀탈출조건을 잘못 설계해서 콜스택 사이즈를 넘어서는 경우 나타난다.
+- `Uncaught RangeError: Maximum call stack size exceeded` : 이런 에러가 뜨기도 한다. 보통 재귀적구현을 할 때 재귀탈출조건을 잘못 설계해서 콜스택 사이즈를 넘어서는 경우 나타난다.
 
 ### Memory Heap
 
--   힙은 객체를 할당하는 영역으로 비구조화된 메모리이다. 변수와 객체에 대한 메모리의 할당은 이 부분에서 일어난다.
+- 힙은 객체를 할당하는 영역으로 비구조화된 메모리이다. 변수와 객체에 대한 메모리의 할당은 이 부분에서 일어난다.
 
 ### Callback Queue(큐)
 
--   실행될 콜백함수 혹은 실행될 메세지들이 담기는 공간이다. 콜스택이 비는 경우 큐에 있는 콜백함수나 메세지들이 콜스택으로 올라와서 실행된다.
+- 실행될 콜백함수 혹은 실행될 메세지들이 담기는 공간이다. 콜스택이 비는 경우 큐에 있는 콜백함수나 메세지들이 콜스택으로 올라와서 실행된다.
 
 ### Web APIs
 
--   비동기이벤트들을 다루기 위한 브라우저에서 제공하는 API이다.
+- 비동기이벤트들을 다루기 위한 브라우저에서 제공하는 API이다.
 -
 
 ### Event Loop(이벤트루프)
 
--   싱글스레드인 자바스크립트 엔진을 비동기적으로 작동하게 만들어주는 방식
--   콜스택과 큐사이에서 콜스택이 비어있는 경우 큐에 있는 콜백을 콜스택으로 전달해주는 역할을 한다. 그렇기 때문에 동기적으로 작동하는 콜스택이 마치 비동기적으로 작동하게끔 만들어준다.
-
-# More
-
--   Event Loop(이벤트루프)
--   Execution Context(실행컨텍스트)
+- 싱글스레드인 자바스크립트 엔진을 비동기적으로 작동하게 만들어주는 방식
+- 콜스택과 큐사이에서 콜스택이 비어있는 경우 큐에 있는 콜백을 콜스택으로 전달해주는 역할을 한다. 그렇기 때문에 동기적으로 작동하는 콜스택이 마치 비동기적으로 작동하게끔 만들어준다.
 
 # Ref
 
--   [JavaScript Visualized: Event Loop](https://dev.to/lydiahallie/javascript-visualized-event-loop-3dif)
--   [자바스크립트 호출 스택(Call Stack) 이해하기](https://new93helloworld.tistory.com/358)
--   [Understanding Javascript Function Executions — Call Stack, Event Loop , Tasks & more 번역판](https://velog.io/@jakeseo_me/2019-03-15-2303-%EC%9E%91%EC%84%B1%EB%90%A8-rmjta5a3xh)
+- [JavaScript Visualized: Event Loop](https://dev.to/lydiahallie/javascript-visualized-event-loop-3dif)
+- [자바스크립트 호출 스택(Call Stack) 이해하기](https://new93helloworld.tistory.com/358)
+- [Understanding Javascript Function Executions — Call Stack, Event Loop , Tasks & more 번역판](https://velog.io/@jakeseo_me/2019-03-15-2303-%EC%9E%91%EC%84%B1%EB%90%A8-rmjta5a3xh)

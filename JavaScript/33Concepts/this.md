@@ -6,10 +6,10 @@
 
 > 물론 나도 아직 잘모른다.😅 그러니까 이제부터 정리해보자 🚀
 
--   [MDN 공식문서](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)의 말을 빌리자면,
-    the value of `this` is determined by `how a function is called` 라고 써져있다. 즉 `함수가 어떻게 호출되는가`에 따라서 this의 값이 결정된다는 말이다.
--   다른 말로 표현하자면 this의 값은 `this가 불리는 문맥`에 따라서 다르게 해석된다는 말이기도 하다.
--   `this`는 대부분의 경우에 특정 객체를 가르킨다.
+- [MDN 공식문서](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)의 말을 빌리자면,
+  the value of `this` is determined by `how a function is called` 라고 써져있다. 즉 `함수가 어떻게 호출되는가`에 따라서 this의 값이 결정된다는 말이다.
+- 다른 말로 표현하자면 this의 값은 `this가 불리는 문맥`에 따라서 다르게 해석된다는 말이기도 하다.
+- `this`는 대부분의 경우에 특정 객체를 가르킨다.
 
 ## 함수가 호출되는 방식에 따른 this
 
@@ -19,21 +19,21 @@
 
 ```javascript
 function hello() {
-    console.log(`Hello my name is ${this.name}`);
+  console.log(`Hello my name is ${this.name}`);
 }
 
 var yang = {
-    name: 'jjanmo',
-    greeting: hello,
+  name: 'jjanmo',
+  greeting: hello,
 };
 
 var kim = {
-    name: 'michael',
+  name: 'michael',
+  greeting: hello,
+  lee: {
+    name: 'suji',
     greeting: hello,
-    lee: {
-        name: 'suji',
-        greeting: hello,
-    },
+  },
 };
 
 yang.greeting(); //Hello my name is jjanmo
@@ -66,10 +66,10 @@ kim.lee.greeting(); //Hello my name is suji
 this.number = 55; //1.this? window
 
 var foo = {
-    number: 100,
-    get() {
-        console.log(this.number);
-    },
+  number: 100,
+  get() {
+    console.log(this.number);
+  },
 };
 
 foo.get(); //2. this? foo / 100
@@ -97,7 +97,7 @@ baz(); //4. this? foo / 100
 
 ```javascript
 function foo(name) {
-    this.name = name;
+  this.name = name;
 }
 
 var jjanmo = new foo('jjanmo');
@@ -110,8 +110,8 @@ console.log(jjanmo); // { name : 'jjanmo' }
 
 ```javascript
 function Movie(title, released) {
-    this.title = title;
-    this.released = released;
+  this.title = title;
+  this.released = released;
 }
 
 var parasite = new Movie('기생충', 2019);
@@ -140,8 +140,8 @@ console.log(window.number); //100
 var number = 100;
 
 function foo() {
-    var number = 55;
-    console.log(this.number);
+  var number = 55;
+  console.log(this.number);
 }
 
 foo(); //this === window 이고 100 출력
@@ -151,10 +151,10 @@ foo(); //this === window 이고 100 출력
 var movie = 'zootopia';
 
 var obj = {
-    movie: 'lionking',
-    getMovie() {
-        console.log(this.movie);
-    },
+  movie: 'lionking',
+  getMovie() {
+    console.log(this.movie);
+  },
 };
 
 setTimeout(obj.getMovie, 1000); //zootopia
@@ -166,14 +166,14 @@ setTimeout(obj.getMovie, 1000); //zootopia
 var number = 10;
 
 var obj = {
-    number: 55,
-    foo() {
-        console.log(this.number); //1
-        function bar() {
-            console.log(this.number); //2
-        }
-        bar();
-    },
+  number: 55,
+  foo() {
+    console.log(this.number); //1
+    function bar() {
+      console.log(this.number); //2
+    }
+    bar();
+  },
 };
 
 obj.foo(); //output? 1-55 2-10
@@ -193,18 +193,18 @@ obj.foo(); //output? 1-55 2-10
 
 > 자세한 부분은 [화살표함수편](arrowfunction.md)에서 계속된다.
 
-# More
+# Quiz
 
--   [**this** Quiz](thisquiz.md)
+[**this** Quiz](thisquiz.md)
 
 # Ref
 
--   [바닐라코딩 this 시리즈](https://www.youtube.com/watch?v=ayyuU0xdbIU&t=304s)
+- [바닐라코딩 this 시리즈](https://www.youtube.com/watch?v=ayyuU0xdbIU&t=304s)
 
--   [Understanding the "this" keyword, call, apply, and bind in JavaScript](https://tylermcginnis.com/this-keyword-call-apply-bind-javascript/)
+- [Understanding the "this" keyword, call, apply, and bind in JavaScript](https://tylermcginnis.com/this-keyword-call-apply-bind-javascript/)
 
--   [함수 호출 방식에 의해 결정되는 this](https://poiemaweb.com/js-this)
+- [함수 호출 방식에 의해 결정되는 this](https://poiemaweb.com/js-this)
 
--   [Function.prototype.apply()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Function/apply)
+- [Function.prototype.apply()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Function/apply)
 
--   [자바스크립트 this 바인딩 우선순위](http://jeonghwan-kim.github.io/2017/10/22/js-context-binding.html)
+- [자바스크립트 this 바인딩 우선순위](http://jeonghwan-kim.github.io/2017/10/22/js-context-binding.html)

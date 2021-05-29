@@ -62,8 +62,8 @@
 
    ```javascript
    function foo() {
-   	var name = 'jjanmo';
-   	console.log(name); //1 'jjanmo'
+     var name = 'jjanmo';
+     console.log(name); //1 'jjanmo'
    }
    foo();
    console.log(name); //2 error : name is not defined
@@ -74,7 +74,7 @@
    ```javascript
    var foo = 'madeleine';
    if (true) {
-   	var bar = 'marley';
+     var bar = 'marley';
    }
    console.log(foo); //'madeleine'
    console.log(bar); //'marley'
@@ -89,8 +89,8 @@
    ```javascript
    var location = 'outside';
    function foo() {
-   	console.log(location); //undefined
-   	var location = 'inside';
+     console.log(location); //undefined
+     var location = 'inside';
    }
    foo();
    ```
@@ -100,9 +100,9 @@
    ```javascript
    var location = 'outside';
    function foo() {
-   	var location = undefined; //hoisting : 선언과 초기화 동시에 일어난다.
-   	console.log(location); //undefined
-   	location = 'inside';
+     var location = undefined; //hoisting : 선언과 초기화 동시에 일어난다.
+     console.log(location); //undefined
+     location = 'inside';
    }
    foo();
    ```
@@ -113,10 +113,10 @@
    var x = 10;
 
    function foo() {
-   	if (x > 100) {
-   		var x = 50;
-   	}
-   	console.log(x);
+     if (x > 100) {
+       var x = 50;
+     }
+     console.log(x);
    }
 
    foo();
@@ -135,11 +135,11 @@
    var x = 10;
 
    function foo() {
-   	//var x = undfined;
-   	if (x > 100) {
-   		x = 50;
-   	}
-   	console.log(x);
+     //var x = undfined;
+     if (x > 100) {
+       x = 50;
+     }
+     console.log(x);
    }
    foo();
    ```
@@ -170,7 +170,7 @@
    ```javascript
    let result = 0;
    function sum(a, b) {
-   	result = a + b;
+     result = a + b;
    }
    console.log(result); // 0
    sum(5, 10);
@@ -190,10 +190,10 @@
    ```javascript
    let number = 10;
    function foo() {
-   	if (true) {
-   		let number = 50; //1
-   	}
-   	console.log(number); //2
+     if (true) {
+       let number = 50; //1
+     }
+     console.log(number); //2
    }
    foo();
    ```
@@ -207,9 +207,9 @@
    ```javascript
    let number = 10;
    function foo() {
-   	console.log(number); //1
-   	let number = 50;
-   	console.log(number); //2
+     console.log(number); //1
+     let number = 50;
+     console.log(number); //2
    }
    foo();
    ```
@@ -221,13 +221,13 @@
    ```javascript
    let number = 10;
    function foo() {
-   	//(let) number; //1) number라는 변수가 호이스팅 된다.
-   	//하지만 초기화는 되지않았기 때문에 사용이 불가능하다.
-   	//이 지점이 TDZ라고 불리는 시점이다.
-   	console.log(number); //2) error 발생
-   	let number = 50; //3) 만약에 진행이 되었다면 let을 만나는 시점에
-   	//undfined라고 초기화가 되고 값 50을 할당한다.
-   	console.log(number); //4) 50이라는 값이 출력된다.
+     //(let) number; //1) number라는 변수가 호이스팅 된다.
+     //하지만 초기화는 되지않았기 때문에 사용이 불가능하다.
+     //이 지점이 TDZ라고 불리는 시점이다.
+     console.log(number); //2) error 발생
+     let number = 50; //3) 만약에 진행이 되었다면 let을 만나는 시점에
+     //undfined라고 초기화가 되고 값 50을 할당한다.
+     console.log(number); //4) 50이라는 값이 출력된다.
    }
    foo();
    ```
@@ -237,9 +237,9 @@
    ```javascript
    var number = 10;
    function foo() {
-   	console.log(number); //1
-   	var number = 50;
-   	console.log(number); //2
+     console.log(number); //1
+     var number = 50;
+     console.log(number); //2
    }
    foo();
    ```
@@ -249,10 +249,10 @@
    ```javascript
    var number = 10;
    function foo() {
-   	var number = undefined;
-   	console.log(number); //1
-   	number = 50;
-   	console.log(number); //2
+     var number = undefined;
+     console.log(number); //1
+     number = 50;
+     console.log(number); //2
    }
    foo();
    ```
@@ -330,13 +330,13 @@ const myConst = 3.14;
 ```javascript
 var b = 1;
 function outer() {
-	var b = 2;
-	function inner() {
-		b++;
-		var b = 3;
-		console.log(b); // => ???
-	}
-	inner();
+  var b = 2;
+  function inner() {
+    b++;
+    var b = 3;
+    console.log(b); // => ???
+  }
+  inner();
 }
 outer();
 ```
@@ -358,13 +358,13 @@ outer();
 ```javascript
 const arr = [];
 for (var i = 0; i < 3; i++) {
-	arr.push(function () {
-		console.log(i); //=> ???
-	});
+  arr.push(function () {
+    console.log(i); //=> ???
+  });
 }
 
 arr.forEach(function (func) {
-	func();
+  func();
 });
 ```
 
@@ -423,10 +423,6 @@ for (let i = 0; i < 3; i++) {
     });
 }
 ```
-
-# More
-
-- [What is TDZ](tdz.md)
 
 # Ref
 

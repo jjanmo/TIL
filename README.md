@@ -2,7 +2,7 @@
 
 # <h1 align="center">My Dev Roadmap</h1>
 
-<p align="center">좋은 개발자가 되기 위한 나만의 로드맵 </p>
+<!-- <p align="center">좋은 개발자가 되기 위한 나만의 로드맵 </p> -->
 
 # Intro
 
@@ -19,7 +19,7 @@
 취업 전에는 **단순한 나만의 개발 정리 노트**로서의 프로젝트였습니다. 취업을 하고 그 과정을 피드백하면서 많은 생각을 하게 되었습니다. 그래서 아래와 같은 프로젝트의 `궁극적인 목표`를 세우게 되었습니다.
 
 ```
-취업을 준비 중인 예비개발자, 막 취업한 주니어 개발자, 경험과 지식이 풍부한 시니어 개발자, 이런 모든 개발자가 필요로 하는 내용, 기초가 아닌 
+취업을 준비 중인 예비개발자, 막 취업한 주니어 개발자, 경험과 지식이 풍부한 시니어 개발자, 이런 모든 개발자가 필요로 하는 내용, 기초가 아닌
 기본적인 내용을 한 곳에 모아 놓은 작은 개발 위키피디아 같은 것을 만들어 보자!
 ```
 
@@ -31,7 +31,52 @@
 
 <br />
 
+---
+
+<br />
+
+# Contents
+
+- [ComputerStructure](#ComputerStructure)
+- [Operator](#Operator)
+- [Language](#Language)
+
+  - [HTML](#HTML)
+  - [CSS](#CSS)
+  - [Javascript](#Javascript)
+
+- [Node](#Node)
+- [DataStructure](#DataStructure)
+- [Algorithm](#Algorithm)
+- [Database](#Database)
+- [Network](#Network)
+- [Web](#Web)
+- [Security](#Security)
+- [PackageManager](#PackageManager)
+- [Bundler](#Bundler)
+  - [Webpack](#Webpack)
+
+<br />
+
+---
+
+<br />
+
+# ComputerStructure
+
+> 컴퓨터 구조와 설계
+
+<br />
+
+# Operator
+
+> 운영체제
+
+<br />
+
 # Language
+
+> 마크업 언어 / 프로그래밍 언어 등등 프로그래밍 할 때 필요한 언어들에 대해서 정리합니다.
 
 ## HTML
 
@@ -95,6 +140,7 @@
 ### 5. Object
 
 - [new operator & constructor](javascript/33concepts/constructor.md)
+
 - [instanceof](javascript/33concepts/instanceof.md)
 
 ### 6. Prototype
@@ -115,12 +161,6 @@
 
 - [DOM and Layout Trees](javascript/33concepts/DOM.md)
 
-- [appendChild()에 대해서](javascript/appendChild.md)
-
-- [Array methods 1](javascript/array/arrayMethod1.md)
-
-- [Array methods 2](javascript/array/arrayMethod2.md)
-
 - [Recursion](javascript/33concepts/recursion.md)
 
 <br />
@@ -129,7 +169,11 @@
 
 <br />
 
-# Data Structure & Algorithm
+# DataStructure
+
+<br />
+
+# Algorithm
 
 <br />
 
@@ -145,22 +189,16 @@
 
 - [HTTP란 무엇일까?](./web/http.md)
 - [브라우저의 동작 원리](./web/how-browsers-work.md)
-  <br />
+
+<br />
 
 # Security
 
 <br />
 
-# HTML
-
-<br />
-
-# Package Manager
-
-## NPM
+# PackageManager
 
 - [NPM(Node Package Manager)](./package-manager/what_is_NPM.md)
-
 - [Semantic Version](./package-manager/semantic_versioning.md)
 
 <br />
