@@ -1,186 +1,175 @@
-# My Roadmap for Web Developer
+![banner](screenshots/banner.png)
 
-> [개발자 로드맵](https://github.com/kamranahmedse/developer-roadmap)을 바탕으로 학습하고 정리합니다. 로드맵의 모든 내용을 다 알아야한다는 의미보다는 `현재 개발 트렌트에 대한 방향성, 체크리스트`라고 생각하고 접근하고 있습니다.
+# <center>My Dev Roadmap</center>
 
-> 굉장히 다양하고 많은 내용이기에 꾸준히 채워나갈 예정입니다.
+<center>
+좋은 개발자가 되기 위한 나만의 로드맵 
+</center>
 
-> 잘못된 내용에 대해서 언제든지 피드백 부탁드립니다.😄
+# Intro
 
-> [추가] 내가 성장하는데 필요한 부분을 정리하는 과정 자체를 하나의 로드맵으로서 만들어 나갈 예정이다. 그렇기 때문에 이 로드맵은 나의 성장 일기와도 같다. 빠르진 않지만 필요한 부분을 나의 언어로서 채워나갈 예정이다.
+### 1.
 
-## General Web(Internet)
+해당 프로젝트는 개발자로서 성장해나가는 과정을 기록으로서 남기기 위해서 시작되었습니다. [개발자 로드맵](https://github.com/kamranahmedse/developer-roadmap)을 바탕으로 학습하고 정리하고 있습니다. 로드맵의 모든 내용을 다 알아야한다는 의미보다는 `개발 트렌트에 대한 방향성, 체크리스트`라고 생각하고 접근하고 있습니다.
 
-- [ ] 인터넷을 어떻게 작동될까?
-- [x] [HTTP란 무엇일까?](General/http.md)
-- [x] [브라우저의 동작 원리](General/how-browsers-work.md)
-- [ ] Domain Name이란 무엇일까?
-- [ ] DNS의 작동 원리
-- [ ] Hosting은 무엇일까?
+### 2.
 
-## Web Security
+좋은 개발자가 되기 위해선 굉장히 다양하고 많은 지식과 다양한 경험이 필요하다고 생각합니다. 경험을 토대로 익혀가는 지식과 널리 흩어져 있는 지식을 나만의 언어로 정리하고자 합니다. 모든 내용을 한 번에 채울 수 없기에 꾸준히 채워나갈 예정입니다.
 
-- [ ] HTTPS
-- [ ] CORS
-- [ ] 컨텐츠 보안 정책
-- [ ] OWASP 보안 취약점
-- [ ] MD5와 사용하지 않는 이유
-- [ ] SHA Family
-- [ ] Hash Algorithm : scrypt, bcrypt
+### 3.
+
+취업 전에는 **단순한 나만의 개발 정리 노트**로서의 프로젝트였습니다. 취업을 하고 그 과정을 피드백하면서 많은 생각을 하게 되었습니다. 그래서 아래와 같은 프로젝트의 `궁극적인 목표`를 세우게 되었습니다.
+
+```
+취업을 준비 중인 예비개발자, 막 취업한 주니어 개발자, 경험과 지식이 풍부한 시니어 개발자, 이런 모든 개발자가 필요로 하는 내용, 기초가 아닌 기본적인 내용을 한 곳에 모아 놓은 작은 개발 위키피디아 같은 것을 만들어 보자!
+```
+
+위와 같은 목표를 달성하기 위해선 아마도 굉장히 많은 시간이 소요될 것입니다. 하지만 꾸준함은 개발자의 미덕이라는 신념 아래 매일 매일 습득한 지식을 가다듬어 누구에게나 도움이 될 수 있는 글로 남겨보고자 합니다.
+
+### 4.
+
+잘못된 내용에 대해서 언제든지 피드백 부탁드립니다.😄
+
+<br />
+<br />
+
+# Language
 
 ## HTML
 
-- [x] [Semantic(의미론적) HTML](html/semantic.md)
-- [ ] 기본적인 SEO
-- [ ] 웹 접근성
-- [ ] 폼과 유효성 검사
-- [ ] 컨벤션과 모범사례(Best Practice)
+- [Semantic(의미론적) HTML](html/semantic.md)
+
+<br />
 
 ## CSS
 
-- [x] [CSS unit(CSS 단위)](CSS/css-unit.md)
+- [CSS unit(CSS 단위)](css/css-unit.md)
 
-- [x] [Selector](CSS/selector.md)
+- [Selector](css/selector.md)
 
 - Layout
-  - [ ] Floats
-  - [ ] Positioning
-  - [x] [Display](CSS/display.md)
-  - [x] [Box Model](CSS/boxmodel.md)
-  - [x] [Flex Box](CSS/float.md)
-  - [ ] CSS Grid
-- [ ] Media Query & Responsive Design
+  - [Box Model](css/boxmodel.md)
+  - [Display](css/display.md)
+  - [Flex Box](css/float.md)
 
-- CSS3
+<br />
 
-  - [ ] Transform
-  - [ ] Transition
-  - [ ] Animation
-  - [ ] Gradient
+## Javascript
 
-- [x] [Flexbox](CSS/flexbox.md)
-  - Flex Layout Example
-- [ ] [Grid](CSS/grid.md)
+> [33 Concepts Every JavaScript Developer Should Know](https://github.com/leonardomso/33-js-concepts)을 바탕으로 정리합니다.
 
-## CSS 구조(CSS Architecture)
+### 1.
 
-- [ ] BEM
+- [Expression vs Statement(표현식과 문장)](javascript/33concepts/expression&statement.md)
 
-# Modern CSS
+### 2. Data Type & Operator
 
-- [ ] Styled Components
-- [ ] CSS Module
-- [ ] Styled JSX
-- [ ] Emotion
+- [Primitive Type(원시자료형)](javascript/33concepts/primitivetype.md)
 
-## JavaScript
+- [Value Types and Reference Types(값과 참조형)](javascript/33concepts/valueType-vs-referenceType.md)
 
-> 자바스크립트의 개념은 [33 Concepts Every JavaScript Developer Should Know](https://github.com/jjanmo/33-js-concepts)를 바탕으로 학습합니다.
+- [Dynamic Type](javascript/33concepts/dynamicType.md)
 
-- [x] [Call Stack(호출스택)](JavaScript/33Concepts/callstack.md)
+- [Type Coercion(형변환)](javascript/33concepts/coercion.md)
 
-- [x] [Execution Context(실행컨텍스트)](JavaScript/33Concepts/execution-context.md)
+- [논리연산자( && 와 || )의 이해](javascript/33concepts/logical_operator.md)
 
-- [x] [Primitive Type(원시자료형)](JavaScript/33Concepts/primitivetype.md)
+### 3. Function & Scope
 
-  - [Dynamic Type](JavaScript/33Concepts/dynamicType.md)
-  - Wrapper Object
+- [Function Basic](javascript/33concepts/function_basic.md)
 
-- [x] [Value Types and Reference Types(값과 참조형)](JavaScript/33Concepts/valueType-vs-referenceType.md)
-- [x] [Type Coercion(형변환)](JavaScript/33Concepts/coercion.md)
+- [Arrow Function](javascript/33concepts/arrowfunction.md)
 
-  - [논리연산자( && 와 || )의 이해](JavaScript/33Concepts/logical_operator.md)
+- [What is Scope](javascript/33concepts/scope.md)
 
-- [ ] == vs ===
-- [ ] Function Scope, Block Scope and Lexical Scope
+- [Variables & Scope](javascript/33concepts/variables_scope_hoisting.md)
 
-  - [Function Basic](JavaScript/33Concepts/function_basic.md)
-  - [What is Scope](JavaScript/33Concepts/scope.md)
-  - [Variables & Scope](JavaScript/33Concepts/variables_scope_hoisting.md)
-  - [About Arrow Function](JavaScript/33Concepts/arrowfunction.md)
+- [Closures](javascript/33concepts/closure.md)
 
-- [x] [Expression vs Statement(표현식과 문장)](JavaScript/33Concepts/expression&statement.md)
-- [ ] IIFE, Modules and Namespaces
-- [ ] Message Queue and Event Loop
-- [ ] setTimeout, setInterval and requestAnimationFrame
-- [ ] JavaScript Engines
-- [ ] Bitwise Operators, Type Arrays and Array Buffers
-- [x] [DOM and Layout Trees](JavaScript/33Concepts/DOM.md)
+- [High Order Functions](javascript/33concepts/highOrderFunctions.md)
 
-  - [appendChild()에 대해서](JavaScript/appendChild.md)
+### 4.
 
-- [ ] Factories and Classes
-- [x] this, call, apply and bind
+- [this for beginner](javascript/33concepts/this.md)
 
-  - [x] [this for beginner](JavaScript/33Concepts/this.md)
-  - [x] [call() vs apply() vs bind()](JavaScript/33Concepts/call_apply_bind.md)
+- [call() vs apply() vs bind()](javascript/33concepts/call_apply_bind.md)
 
-- [ ] new, Constructor, instanceof and Instances
+### 5. Object
 
-  - [ ] [new operator & constructor](JavaScript/33Concepts/constructor.md)
-  - [x] [instanceof](JavaScript/33Concepts/instanceof.md)
+- [new operator & constructor](javascript/33concepts/constructor.md)
+- [instanceof](javascript/33concepts/instanceof.md)
 
-- [ ] [Prototype Inheritance and Prototype Chain(프로토타입의 상속과 체인)](JavaScript/33Concepts/prototype.md)
-- [ ] Object.create and Object.assign
-- [ ] map, reduce, filter
+### 6. Prototype
 
-  - [Array methods 1탄](JavaScript/array/arrayMethod1.md)
+- [Prototype Inheritance and Prototype Chain(프로토타입의 상속과 체인)](javascript/33concepts/prototype.md)
 
-    > Array.from(), Array.of(), every(). some(), sort(), join(), forEach()
+### 7. Asynchronous Javascript
 
-  - [Array methods 2탄](JavaScript/array/arrayMethod2.md)
-    > filter(), find(), findIndex(), indexOf(), lastIndexOf(), includes()
+- [Promises](javascript/33concepts/promises.md)
 
-- [ ] Pure Functions, Side Effects and State Mutation
-- [ ] [Closures](JavaScript/33Concepts/closure.md)
+### 8. How JavaScript works
 
-- [ ] [High Order Functions](JavaScript/33Concepts/highOrderFunctions.md)
+- [Call Stack(호출스택)](javascript/33concepts/callstack.md)
 
-- [ ] [Recursion](JavaScript/33Concepts/recursion.md)
+- [Execution Context(실행컨텍스트)](javascript/33concepts/execution-context.md)
 
-- [ ] [Promises](JavaScript/33Concepts/promises.md)
+### ETC
 
-- [ ] async/await
+- [DOM and Layout Trees](javascript/33concepts/DOM.md)
 
-- [ ] Collections and Generators
+- [appendChild()에 대해서](javascript/appendChild.md)
 
-- [ ] Inheritance, Polymorphism and Code Reuse
+- [Array methods 1](javascript/array/arrayMethod1.md)
 
-- [ ] Design Patterns
+- [Array methods 2](javascript/array/arrayMethod2.md)
 
-- [ ] Partial Applications, Currying, Compose and Pipe
+- [Recursion](javascript/33concepts/recursion.md)
 
-- [ ] Clean Code
+<br />
 
-- [ ] Expensive Operation and Big O Notation
-- [x] [Data Structures & Algorithms](https://github.com/jjanmo/ds-algo)
+# Node
 
-  > 진행중
+<br />
 
-## Modular JavaScript & ES6+
+# Data Structure & Algorithm
 
-## VCS(Version Control System)
+<br />
 
-- [ ] [Git & Github](https://github.com/jjanmo/gitlearn)
+# Database
 
-  > 진행중
+<br />
 
-## Package Manager
+# Network
 
-- [x] [NPM(Node Package Manager)](PackageManager/what_is_NPM.md)
+<br />
 
-- [x] [Semantic Version](PackageManager/semantic_versioning.md)
+# Web
 
-## Build Tool
+- [HTTP란 무엇일까?](./web/http.md)
+- [브라우저의 동작 원리](./web/how-browsers-work.md)
+  <br />
 
-- Task Runner
+# Security
 
-  - [ ] npm scripts
+<br />
 
-- Module Bundler
+# HTML
 
-  - [ ] Webpack
+<br />
 
-    - [x] [Intro](Webpack/webpack-intro.md)
-    - [x] [Basic](Webpack/webpack-basic.md)
+# Package Manager
 
-  - [ ] Parcel
+## NPM
+
+- [NPM(Node Package Manager)](./package-manager/what_is_NPM.md)
+
+- [Semantic Version](./package-manager/semantic_versioning.md)
+
+<br />
+
+# Bundler
+
+## Webpack
+
+- [Intro](./bundler/webpack/webpack-intro.md)
+- [Basic](./bundler/webpack/webpack-basic.md)
