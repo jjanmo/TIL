@@ -34,8 +34,8 @@ node_modules/.bin/webpack --mode development --entry ./scr/app.js --output dist/
 
 ```javascript
 module.exports = {
-	mode: 'development',
-	//...
+  mode: 'development',
+  //...
 };
 ```
 
@@ -53,10 +53,10 @@ module.exports = {
 
 ```javascript
 module.exports = {
-	entry: {
-		main: './src/app.js',
-	},
-	//...
+  entry: {
+    main: './src/app.js',
+  },
+  //...
 };
 ```
 
@@ -68,14 +68,14 @@ module.exports = {
 
 ```javascript
 module.exports = {
-	entry: {
-		main: './src/app.js',
-	},
-	//...
-	output: {
-		filename: '[name].js',
-		path: path.resolve(__dirname + '/dist'),
-	},
+  entry: {
+    main: './src/app.js',
+  },
+  //...
+  output: {
+    filename: '[name].js',
+    path: path.resolve(__dirname + '/dist'),
+  },
 };
 ```
 
@@ -99,19 +99,19 @@ module.exports = {
 
 ```javascript
 module.exports = {
-	entry: './src/app.js',
-	output: {
-		fileName: 'bundle.js',
-		path: path.resolve(__dirname + '/dist'),
-	},
-	module: {
-		rules: [
-			{
-				test: /\.css$/,
-				use: ['style-loader', 'css-loader'],
-			},
-		],
-	},
+  entry: './src/app.js',
+  output: {
+    fileName: 'bundle.js',
+    path: path.resolve(__dirname + '/dist'),
+  },
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
+    ],
+  },
 };
 ```
 
@@ -139,15 +139,15 @@ file-loader는 말 그대로 파일을 처리하는 로더로서 이미지나 �
 
 ```javascript
 module.exports = {
-	//...
-	module: {
-		rules: [
-			{
-				test: /\.(jpg|png|svg|gif)$/,
-				use: ['file-loader'],
-			},
-		],
-	},
+  //...
+  module: {
+    rules: [
+      {
+        test: /\.(jpg|png|svg|gif)$/,
+        use: ['file-loader'],
+      },
+    ],
+  },
 };
 ```
 
@@ -155,19 +155,19 @@ module.exports = {
 
 ```javascript
 module.exports = {
-	//...
-	module: {
-		rules: [
-			{
-				test: /\.(jpg|png|svg|gif)$/,
-				loader: 'file-loader',
-				options: {
-					publicPath: './dist/',
-					name: '[name].[ext]?[hash]',
-				},
-			},
-		],
-	},
+  //...
+  module: {
+    rules: [
+      {
+        test: /\.(jpg|png|svg|gif)$/,
+        loader: 'file-loader',
+        options: {
+          publicPath: './dist/',
+          name: '[name].[ext]?[hash]',
+        },
+      },
+    ],
+  },
 };
 ```
 
@@ -185,21 +185,21 @@ module.exports = {
 
 ```javascript
 module.exports = {
-	//...
-	module: {
-		rules: [
-			{
-				test: /\.(jpg|png|svg|gif)$/,
-				loader: 'url-loader',
-				options: {
-					publicPath: './dist/',
-					name: '[name].[ext]?[hash]',
-					limit: 8196, //byte
-					fallback: require.resolve('file-loader'),
-				},
-			},
-		],
-	},
+  //...
+  module: {
+    rules: [
+      {
+        test: /\.(jpg|png|svg|gif)$/,
+        loader: 'url-loader',
+        options: {
+          publicPath: './dist/',
+          name: '[name].[ext]?[hash]',
+          limit: 8196, //byte
+          fallback: require.resolve('file-loader'),
+        },
+      },
+    ],
+  },
 };
 ```
 
@@ -224,35 +224,35 @@ module.exports = {
   ```javascript
   //babel.config.js
   module.exports = {
-  	presets: [
-  		[
-  			'@babel/preset-env', //사용할 preset 종류
-  			{
-  				//preset option 객체 설정
-  				//아래 외에도 많은 옵션 설정이 존재한다.
-  				//또한 폴리필이 필요하다면 여기에서 설정을 해준다.
-  				targets: {
-  					//프로젝트가 진행될 브라우저, 환경에 대한 설정
-  					chromes: '80',
-  					ie: '11',
-  				},
-  			},
-  		],
-  	],
+    presets: [
+      [
+        '@babel/preset-env', //사용할 preset 종류
+        {
+          //preset option 객체 설정
+          //아래 외에도 많은 옵션 설정이 존재한다.
+          //또한 폴리필이 필요하다면 여기에서 설정을 해준다.
+          targets: {
+            //프로젝트가 진행될 브라우저, 환경에 대한 설정
+            chromes: '80',
+            ie: '11',
+          },
+        },
+      ],
+    ],
   };
 
   //webpack.config.js
   module.exports = {
-  	//...
-  	module: {
-  		rules: [
-  			{
-  				test: /\.js$/,
-  				loader: 'babel-loader',
-  				exclude: /node_modules/,
-  			},
-  		],
-  	},
+    //...
+    module: {
+      rules: [
+        {
+          test: /\.js$/,
+          loader: 'babel-loader',
+          exclude: /node_modules/,
+        },
+      ],
+    },
   };
   ```
 
@@ -276,16 +276,16 @@ module.exports = {
 
   ```javascript
   module: {
-  	rules: [
-  		{
-  			test: /\.s[ac]ss$/,
-  			use: [
-  				'style-loader', // create style node(inline style) from JS string
-  				'css-loader', // translate css to commonJS
-  				'sass-loader', // compiles sass to css
-  			],
-  		},
-  	];
+    rules: [
+      {
+        test: /\.s[ac]ss$/,
+        use: [
+          'style-loader', // create style node(inline style) from JS string
+          'css-loader', // translate css to commonJS
+          'sass-loader', // compiles sass to css
+        ],
+      },
+    ];
   }
   ```
 
@@ -295,16 +295,16 @@ module.exports = {
 
 > 플러그인은 로더와 비교할 수 있다. 로더는 파일 단위로 실행되고 그 파일을 모듈화한다. 반면 플러그인은 최종 빌드된(번들링된) 결과물 단위로 실행된다. 즉 최종 결과물에 추가적인 작업을 하고 싶을 때 플러그인을 추가하여 실행한다.
 
-![webpack-plugin](../image/webpack-plugin.png)
+![webpack-plugin](../../image/webpack-plugin.png)
 
 > 전체 흐름에서 흰색 박스가 플러그인이 실행되는 시점이다.
 
 ```javascript
 module.exports = {
-	//...
-	plugins: [
-		//new 연산자를 통한 인스턴스 생성
-	],
+  //...
+  plugins: [
+    //new 연산자를 통한 인스턴스 생성
+  ],
 };
 ```
 
@@ -393,19 +393,19 @@ module.exports = {
 
   ```javascript
   module.exports = {
-  	//...
-  	plugins: [
-  		new HtmlWebpackPlugin({
-  			template: './src/index.html',
-  			templateParameter: {
-  				env: process.env.NODE_ENV === 'development' ? '(개발용)' : '',
-  			},
-  			minify: {
-  				collapsWhitespace: true,
-  				removeComments: true,
-  			},
-  		}),
-  	],
+    //...
+    plugins: [
+      new HtmlWebpackPlugin({
+        template: './src/index.html',
+        templateParameter: {
+          env: process.env.NODE_ENV === 'development' ? '(개발용)' : '',
+        },
+        minify: {
+          collapsWhitespace: true,
+          removeComments: true,
+        },
+      }),
+    ],
   };
   ```
 
@@ -424,8 +424,8 @@ module.exports = {
   //default로 export 되어있지 않기 때문에 주의!
 
   module.exports = {
-  	//...
-  	plugins: [new CleanWebpackPlugin()],
+    //...
+    plugins: [new CleanWebpackPlugin()],
   };
   ```
 

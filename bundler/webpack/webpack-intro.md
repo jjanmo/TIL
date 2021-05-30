@@ -1,6 +1,6 @@
 # What is Webpack
 
-![webpack](../image/webpack.PNG)
+![webpack](../../image/webpack.PNG)
 
 <br />
 
@@ -30,7 +30,7 @@
 ```javascript
 //하나의 파일
 (function () {
-	//code here
+  //code here
 })();
 ```
 
