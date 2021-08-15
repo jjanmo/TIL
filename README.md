@@ -157,7 +157,7 @@
 
 - [Execution Context(실행컨텍스트)](./javascript/33concepts/execution-context.md)
 
-### ETC
+### 9.
 
 - [DOM and Layout Trees](./javascript/33concepts/DOM.md)
 
