@@ -8,17 +8,19 @@
 
 ## Must Do ⭐️⭐️⭐️⭐️⭐️
 
-- [ ] VCS(Version Control System) : Git / Github
+> 아래에 중복되는 부분있음
+
+- [ ] VCS(Version Control System) : Git / Github : vcs
 - [ ] 터미널 기본 사용법 / 터미널 기본 명령
   > grep awk sed lsof curl wget ital head less find ssh kill
-- [ ] 데이터 구조(자료구조)
-- [ ] 알고리즘
+- [ ] 데이터 구조(자료구조) -> 따로
+- [ ] 알고리즘 -> 따로
 - [ ] 유의적버전
-- [ ] SSH
-- [ ] HTTP/HTTPS
-- [ ] API
+- [ ] SSH -> web
+- [ ] HTTP/HTTPS -> web
+- [ ] API -> web
 - [ ] 문자인 코딩
-- [ ] 디자인 패턴
+- [ ] 디자인 패턴 -> 따로
 
 ## Web 관련 ⭐️⭐️⭐️⭐️⭐️
 

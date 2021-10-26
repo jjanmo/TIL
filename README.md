@@ -2,8 +2,6 @@
 
 # <h1 align="center">My Dev Roadmap</h1>
 
-<!-- <p align="center">좋은 개발자가 되기 위한 나만의 로드맵 </p> -->
-
 # Intro
 
 ### 1.
@@ -68,7 +66,7 @@
 
 <br />
 
-# Operator
+# Operator System
 
 > 운영체제
 
@@ -189,6 +187,7 @@
 
 - [HTTP란 무엇일까?](./web/http.md)
 - [브라우저의 동작 원리](./web/how-browsers-work.md)
+- [CORS](./web/cors.md)
 
 <br />
 
