@@ -1,210 +1,105 @@
-![banner](screenshots/banner.png)
-
 # <h1 align="center">My Dev Roadmap</h1>
 
-# Intro
+![banner](screenshots/banner.png)
 
-### 1.
+## Intro
 
-해당 프로젝트는 개발자로서 성장해나가는 과정을 기록으로서 남기기 위해서 시작되었습니다. [개발자 로드맵](https://github.com/kamranahmedse/developer-roadmap)을 바탕으로 학습하고 정리하고 있습니다. 로드맵의 모든 내용을 다 알아야한다는 의미보다는 `개발 트렌트에 대한 방향성, 체크리스트`라고 생각하고 접근하고 있습니다.
+<details>
+<summary>MyDevRoadMap 이란 </summary>
+<br />
 
-### 2.
+`UPDATE 21.11.20`
 
-좋은 개발자가 되기 위해선 굉장히 다양하고 많은 지식과 다양한 경험이 필요하다고 생각합니다. 경험을 토대로 익혀가는 지식과 널리 흩어져 있는 지식을 나만의 언어로 정리하고자 합니다. 모든 내용을 한 번에 채울 수 없기에 꾸준히 채워나갈 예정입니다.
+취업 전, 이 곳은 **단순한 나만의 개발 정리 노트**로서의 프로젝트 공간이였다. 그래서 [개발자 로드맵](https://github.com/kamranahmedse/developer-roadmap)을 참고하여 필요하다고 생각하는 부분들에 대해서 **나의 언어**로 정리해보고자 노력하였다. 또한 로드맵의 모든 내용을 다 알아야한다는 의미보다는 `개발 트렌트에 대한 방향성, 체크리스트`라고 생각하고 접근하였다.
 
-### 3.
+취업 후, 개발자로서 실무를 경험하면서 스스로의 피드백을 통해서 많은 생각을 하게 되었다. 좋은 개발자가 되기 위해선 굉장히 다양하고 많은 지식과 다양한 경험이 필요하다고 생각한다. 프런트엔드 개발자로서 개발 인생의 첫 걸음을 시작했지만, 실무에서는 프런트엔드뿐만 아니라 백엔드, 나아가 컴공의 기본적인 지식들을 이해해야 알 수 있는 부분들도 있었다. 비전공자인 나로서는 많은 부분이 처음이였고, 어디까지 이것을 알아야 할지에 대한 고민을 하게 되었다. 이러한 고민은 끝은 결국 `내가 직접 다 공부해보고 경험해보자` 였다. 그래서 개발자로서 필요한 지식들, 특히 `컴공의 기본에 해당하는 부분` ( 컴퓨터 구조, 운영체제, 자료구조, 알고리즘, 네트워크, 데이터 베이스 등 )을 포함한 광범위한 부분을 차근 차근 나의 언어로 정리해보고자 한다. 더불어, 그 과정 속에서의 오답노트들과 의문들도 함께 정리할 것이다.
 
-취업 전에는 **단순한 나만의 개발 정리 노트**로서의 프로젝트였습니다. 취업을 하고 그 과정을 피드백하면서 많은 생각을 하게 되었습니다. 그래서 아래와 같은 프로젝트의 `궁극적인 목표`를 세우게 되었습니다.
+ps1. 인생과 개발은 비슷하다. 모두 오답 노트를 통해서 성장하기 때문이다. 인생은 오답 노트투성이, 개발도 오답 노트투성이.😅
 
-```
-취업을 준비 중인 예비개발자, 막 취업한 주니어 개발자, 경험과 지식이 풍부한 시니어 개발자, 이런 모든 개발자가 필요로 하는 내용,
-기초가 아닌 기본적인 내용을 한 곳에 모아 놓은 작은 개발 위키피디아 같은 것을 만들어 보자!
-```
+ps2. 이 과정이 얼마나 오래 걸릴지, 얼마 후에 마무리될지는 알 수 없다. 하지만 꾸준히 정리하려고 노력할 것이다.🚀
 
-위와 같은 목표를 달성하기 위해선 아마도 굉장히 많은 시간이 소요될 것입니다. 하지만 꾸준함은 개발자의 미덕이라는 신념 아래 매일 매일 습득한 지식을 가다듬어 누구에게나 도움이 될 수 있는 글로 남겨보고자 합니다.
-
-### 4.
-
-잘못된 내용에 대해서 언제든지 피드백 부탁드립니다.😄
+</details>
 
 <br />
+
+## 📌 Computer Science
 
 ---
 
-<br />
+### ComputerStructure (컴퓨터 구조와 설계)
 
-# Contents
+### Operator (운영체제)
 
-- [ComputerStructure](#ComputerStructure)
-- [Operator](#Operator)
-- [Language](#Language)
+### Database
 
-  - [HTML](#HTML)
-  - [CSS](#CSS)
-  - [Javascript](#Javascript)
+### Network(네트워크)
 
-- [Node](#Node)
-- [DataStructure](#DataStructure)
-- [Algorithm](#Algorithm)
-- [Database](#Database)
-- [Network](#Network)
-- [Web](#Web)
-- [Security](#Security)
-- [PackageManager](#PackageManager)
-- [Bundler](#Bundler)
-  - [Webpack](#Webpack)
+### DataStructure
+
+### Algorithm
+
+### Software Engineering
 
 <br />
+
+## 📌 Language
 
 ---
 
-<br />
+### [Javascript](/javascript/javascript.md)
 
-# ComputerStructure
-
-> 컴퓨터 구조와 설계
-
-<br />
-
-# Operator System
-
-> 운영체제
-
-<br />
-
-# Language
-
-> 마크업 언어 / 프로그래밍 언어 등등 프로그래밍 할 때 필요한 언어들에 대해서 정리합니다.
-
-## HTML
+### HTML
 
 - [Semantic(의미론적) HTML](./html/semantic.md)
 
-<br />
-
-## CSS
+### CSS
 
 - [CSS unit(CSS 단위)](./css/css-unit.md)
 
 - [Selector](./css/selector.md)
 
-- Layout
-  - [Box Model](./css/boxmodel.md)
-  - [Display](./css/display.md)
-  - [Flex Box](./css/float.md)
+- [Box Model](./css/boxmodel.md)
+
+- [Display](./css/display.md)
+
+- [Flex Box](./css/float.md)
 
 <br />
 
-## Javascript
+## 📌 Library & Framework
 
-> [33 Concepts Every JavaScript Developer Should Know](https://github.com/leonardomso/33-js-concepts)을 바탕으로 정리합니다.
-
-### 1.
-
-- [Expression vs Statement(표현식과 문장)](./javascript/33concepts/expression&statement.md)
-
-### 2. Data Type & Operator
-
-- [Primitive Type(원시자료형)](./javascript/33concepts/primitivetype.md)
-
-- [Value Types and Reference Types(값과 참조형)](./javascript/33concepts/valueType-vs-referenceType.md)
-
-- [Dynamic Type](./javascript/33concepts/dynamicType.md)
-
-- [Type Coercion(형변환)](./javascript/33concepts/coercion.md)
-
-- [논리연산자( && 와 || )의 이해](./javascript/33concepts/logical_operator.md)
-
-### 3. Function & Scope
-
-- [Function Basic](./javascript/33concepts/function_basic.md)
-
-- [Arrow Function](./javascript/33concepts/arrowfunction.md)
-
-- [What is Scope](./javascript/33concepts/scope.md)
-
-- [Variables & Scope](./javascript/33concepts/variables_scope_hoisting.md)
-
-- [Closures](./javascript/33concepts/closure.md)
-
-- [High Order Functions](./javascript/33concepts/highOrderFunctions.md)
-
-### 4.
-
-- [this for beginner](./javascript/33concepts/this.md)
-
-- [call() vs apply() vs bind()](./javascript/33concepts/call_apply_bind.md)
-
-### 5. Object
-
-- [new operator & constructor](./javascript/33concepts/constructor.md)
-
-- [instanceof](./javascript/33concepts/instanceof.md)
-
-### 6. Prototype
-
-- [Prototype Inheritance and Prototype Chain(프로토타입의 상속과 체인)](./javascript/33concepts/prototype.md)
-
-### 7. Asynchronous Javascript
-
-- [Promises](./javascript/33concepts/promises.md)
-
-### 8. How JavaScript works
-
-- [Call Stack(호출스택)](./javascript/33concepts/callstack.md)
-
-- [Execution Context(실행컨텍스트)](./javascript/33concepts/execution-context.md)
-
-### 9.
-
-- [DOM and Layout Trees](./javascript/33concepts/DOM.md)
-
-- [Recursion](./javascript/33concepts/recursion.md)
+---
 
 <br />
 
-# Node
+## 📌 Web
 
-<br />
+---
 
-# DataStructure
+- 인터넷의 작동 원리
 
-<br />
+- [HTTP와 HTTPS](./web/http.md)
 
-# Algorithm
-
-<br />
-
-# Database
-
-<br />
-
-# Network
-
-<br />
-
-# Web
-
-- [HTTP란 무엇일까?](./web/http.md)
 - [브라우저의 동작 원리](./web/how-browsers-work.md)
-- [CORS](./web/cors.md)
+
+- DNS와 동작 방식
+
+- 도메인이란 무엇일까??
+
+- 호스팅이란??
+
+- [나를 괴롭히는 CORS, 도대체 이것은 무엇일까??](./web/cors.md)
 
 <br />
 
-# Security
+## 📌 Security
+
+---
 
 <br />
 
-# PackageManager
+## 📌 NewTechnology & Trend
 
-- [NPM(Node Package Manager)](./package-manager/what_is_NPM.md)
-- [Semantic Version](./package-manager/semantic_versioning.md)
+---
 
 <br />
-
-# Bundler
-
-## Webpack
-
-- [Intro](./bundler/webpack/webpack-intro.md)
-- [Basic](./bundler/webpack/webpack-basic.md)
