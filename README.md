@@ -1,6 +1,6 @@
 # <h1 align="center">My Dev Roadmap</h1>
 
-![banner](screenshots/banner.png)
+![banner](/screenshots/banner.png)
 
 ## Intro
 
@@ -42,23 +42,25 @@ ps2. 이 과정이 얼마나 오래 걸릴지, 얼마 후에 마무리될지는 
 
 ## 📌 Language
 
-### [Javascript](/javascript/javascript.md)
+### Javascript
+
+- [33 JavaScript Concepts](/language/javascript/javascript.md)
 
 ### HTML
 
-- [Semantic(의미론적) HTML](./html/semantic.md)
+- [Semantic(의미론적) HTML](/language/html/semantic.md)
 
 ### CSS
 
-- [CSS unit(CSS 단위)](./css/css-unit.md)
+- [CSS unit(CSS 단위)](/language/css/css-unit.md)
 
-- [Selector](./css/selector.md)
+- [Selector](/language/css/selector.md)
 
-- [Box Model](./css/boxmodel.md)
+- [Box Model](/language/css/boxmodel.md)
 
-- [Display](./css/display.md)
+- [Display](/language/css/display.md)
 
-- [Flex Box](./css/float.md)
+- [Flex Box](/language/css/float.md)
 
 <br />
 
@@ -70,9 +72,9 @@ ps2. 이 과정이 얼마나 오래 걸릴지, 얼마 후에 마무리될지는 
 
 - 인터넷의 작동 원리
 
-- [HTTP와 HTTPS](./web/http.md)
+- [HTTP와 HTTPS](/web/http.md)
 
-- [브라우저의 동작 원리](./web/how-browsers-work.md)
+- [브라우저의 동작 원리](/web/how-browsers-work.md)
 
 - DNS와 동작 방식
 
@@ -80,7 +82,7 @@ ps2. 이 과정이 얼마나 오래 걸릴지, 얼마 후에 마무리될지는 
 
 - 호스팅이란??
 
-- [나를 괴롭히는 CORS, 도대체 이것은 무엇일까??](./web/cors.md)
+- [나를 괴롭히는 CORS, 도대체 이것은 무엇일까??](/web/cors.md)
 
 <br />
 
