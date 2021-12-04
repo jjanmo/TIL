@@ -22,13 +22,15 @@
 
 - [Expression vs Statement(표현식과 문장)](./33concepts/expression&statement.md)
 
-- [Primitive Type(원시자료형)](./33concepts/primitivetype.md)
+- [Primitive Type](./33concepts/primitivetype.md)
 
-- [Value Types and Reference Types(값과 참조형)](./33concepts/valueType-vs-referenceType.md)
+- [Value Types and Reference Types](./33concepts/valueType-vs-referenceType.md)
+
+- Implicit, Explicit, Nominal, Structuring and Duck Typing
+
+  - [Type Coercion(형변환)](./33concepts/coercion.md)
 
 - [Dynamic Type](./33concepts/dynamicType.md)
-
-- [Type Coercion(형변환)](./33concepts/coercion.md)
 
 - [논리연산자( && 와 || )의 이해](./33concepts/logical_operator.md)
 
