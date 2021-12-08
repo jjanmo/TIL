@@ -23,7 +23,7 @@ function. In JavaScript, closures are created every time a function is created, 
 
   > 실행 가능한 코드란 `1)전역코드` `2)함수코드` 3)eval코드가 있다. (_eval코드는 관점이 다르기 때문에 여기서 논외로 하겠다._)
 
-  ![execution context](../../image/execution-context.png)
+  ![execution context](./images/execution-context.png)
 
   > 위 코드의 스크립트가 실행된다고 하자. 첫번째로 1)스크립트가 실행될 때 가장 먼저 `글로벌 실행 컨텍스트`가 생성된다. 이제 위에서부터 코드를 읽어나가면서 각각의 `function object`들이 생성된다. 그러다가 함수 호출부를 만난다. 2)함수 foo가 호출될 때 `함수 foo의 실행 컨텍스트`가 생성된다. 함수 foo가 종료되고 3)함수 bar가 호출 된다. 이 때 `함수 bar의 실행컨텍스트`가 생성된다. 함수 bar 안에서 3)함수 baz가 호출되고 그 때 `baz의 실행컨텍스트`가 생성된다.
 

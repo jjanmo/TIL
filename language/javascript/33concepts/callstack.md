@@ -6,7 +6,7 @@
 
 > 자바스크립트 실행환경과 자바스크립트 엔진
 
-![jsengine](../../image/jsengine.png)
+![jsengine](./images/jsengine.png)
 
 자바스크립트 엔진은 기본적으로 `싱글스레드`이다. 그 말은 한 번에 한가지의 작업만 가능하다는 이야기다. 예를 들면, 브라우저에서 어떤 이벤트가 진행된다고 했을 때, 한가지 작업이 끝날때까지 우리는 계속 기다렸다가 그 이벤트가 끝난 후에 (웹상에서) 다른 일이 가능하다는 이야기다. 하지만 현재 우리에게 그런 일은 일어나지 않는다. 왜냐하면 자바스크립트 엔진 외에도 브라우저에서 여러가지( Web APIs, DOM APIs, HTTP request, setTimeout 등)를 지원해주고 있기 때문이다. 그럼 위 이미지에서 각각의 구성요소들이 무슨 역할을 하는지 대해서 이해해보자 🚀
 
@@ -36,8 +36,8 @@ c(); //1
 
 > 위 코드를 콜스택에 쌓이고 제거되는 순서대로 표현한 것이다.(왼쪽에서 오른쪽으로 진행된다) 또한 코드 옆에 적힌 순서대로 콜스택에 쌓이고 제거된다.
 
-![callstack1](../../image/callstack1.png)
-![callstack2](../../image/callstack2.png)
+![callstack1](./images/callstack1.png)
+![callstack2](./images/callstack2.png)
 
 - `Uncaught RangeError: Maximum call stack size exceeded` : 이런 에러가 뜨기도 한다. 보통 재귀적구현을 할 때 재귀탈출조건을 잘못 설계해서 콜스택 사이즈를 넘어서는 경우 나타난다.
 

@@ -23,7 +23,7 @@ let a = 'foo';
 a = 'glu';
 ```
 
-![immutable_value](../../image/immutable_value.png)
+![immutable_value](./images/immutable_value.png)
 
 ## Number
 

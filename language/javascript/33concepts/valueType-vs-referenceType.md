@@ -23,11 +23,11 @@ b = 5; //3
 console.log('after', a, b); //a : 10, b : 5
 ```
 
-![값의 복사](../../image/value.png)
+![값의 복사](./images/value.png)
 
 > 2번코드인 `let b = a;`에서 값의 복사가 이루어진다. 즉 a와 b는 별개의 값을 갖게 되는 것이다.
 
-![값의 복사](../../image/value1.png)
+![값의 복사](./images/value1.png)
 
 > 좀 더 깊이있게 바라보면(메모리 관점에서),엄밀하게 2번코드인 `let b = a;`에서는 같은 값을 바라보고 있지만, 값이 변경되면서 새로운 값을 생성하게된다. 즉 원시타입은 immutable value이기 때문에 값의 변경이 이루어지면 안되기 때문에 새로운 값을 생성해서 그 값의 메모리 주소를 b에 할당하는 것이다.
 
@@ -43,7 +43,7 @@ obj2.num = 5;
 console.log('after', obj1.num, obj2.num); //obj1.num : 5, obj2.num : 5
 ```
 
-![참조의 복사](../../image/reference.png)
+![참조의 복사](./images/reference.png)
 
 # Passed by value and Passed by reference
 
@@ -82,7 +82,7 @@ console.log('after swap', x, y); // 10, 5?? (X) -> still 5, 10
 - 인자로 넘어갈 때, x와 y의 값이 복사되어서 `a = 5, b = 10`인 형태로 넘어간다.
 - 그렇기때문에 함수 밖의 x,y에는 전혀 영향이 없는 상태가 된다.
 
-![passedbyvalue](../../image/passbyvalue.png)
+![passedbyvalue](./images/passbyvalue.png)
 
 ## Passed by value of references
 
@@ -103,7 +103,7 @@ swap(x, y);
 console.log('after swap', x, y); // x = {num : 10} y = {num : 5}
 ```
 
-![passedbyreference](../../image/passbyreference.png)
+![passedbyreference](./images/passbyreference.png)
 
 - 위의 참조타입에서의 인자 전달을 보면 마치 passed by reference처럼 보이지만, 사실은 passed by value이다.
 - 전달된 값이 같은 참조값이지만 정확하게는 복사된 참조값이 되는 것!
@@ -128,7 +128,7 @@ console.log(original)  //{ isChanged: false }
 - 전달된 인자는 **복사된 참조값**이다. 그 복사된 참조값이 `before`단계에서는 같은 참조값을 갖고 있지만 함수 내부의 코드에 의해 `after`단계에서는 새로운 참조값으로 재할당 되었음을 볼 수 있다.
 - obj에 참조값 재할당으로 인해 외부 변수인 original과의 연결이 끊어지게된다.
 
-![reason-notpassedbyreference](../../image/notPassedbyreference.png)
+![reason-notpassedbyreference](./images/notPassedbyreference.png)
 
 ## Quiz1
 

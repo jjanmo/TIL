@@ -1,20 +1,26 @@
 # Execution Context
 
+## 정의
+
+## 구성
+
+## 과정
+
 ## Execution Context(실행컨텍스트)란?
 
--   함수가 실행되는 영역, **묶음**을 말한다.
--   함수 코드를 실행하고 실행결과를 저장한다.
--   함수가 호출되는 시점에 실행컨텍스트가 생성된다.
--   함수가 호출되면 `3가지의 값`을 실행 컨텍스트로 넘겨준다.
-    -   함수를 호출한 `object` 🧷 `this binding component`에 설정
-    -   `함수 코드(함수 안에 작성된 코드)` 🧷 `function object`의 `[[Code]]` 프로퍼티에 설정
-    -   호출한 함수의 `인자(parameter값)` 🧷 `Argument object`에 설정
+- 함수가 실행되는 영역, **묶음**을 말한다.
+- 함수 코드를 실행하고 실행결과를 저장한다.
+- 함수가 호출되는 시점에 실행컨텍스트가 생성된다.
+- 함수가 호출되면 `3가지의 값`을 실행 컨텍스트로 넘겨준다.
+  - 함수를 호출한 `object` 🧷 `this binding component`에 설정
+  - `함수 코드(함수 안에 작성된 코드)` 🧷 `function object`의 `[[Code]]` 프로퍼티에 설정
+  - 호출한 함수의 `인자(parameter값)` 🧷 `Argument object`에 설정
 
 ## Execution Context has two phases
 
--   Creation phase
+- Creation phase
 
--   Code execution phase
+- Code execution phase
 
 ### 실행 컨텍스트의 구성
 
@@ -22,12 +28,12 @@
 
 ```javascript
 function book() {
-    function get() {
-        return point;
-    }
+  function get() {
+    return point;
+  }
 
-    var point = 123;
-    return get();
+  var point = 123;
+  return get();
 }
 console.log(book());
 ```
@@ -36,7 +42,7 @@ console.log(book());
 
 1. `function` 키워드를 만나면 `function object(book)`를 생성한다.
 2. 이 때, `function object` 안의 내부프로퍼티인 `[[SCOPE]]` 에 **함수 밖의 스코프**(여기선 global scope)를 설정
-    > 이렇게 생성되는 것을 `Lexical Environment(정적환경)`에 의해 결정된 스코프이다.
+   > 이렇게 생성되는 것을 `Lexical Environment(정적환경)`에 의해 결정된 스코프이다.
 
 > 처음 `function object`를 생성할 때는 함수의 내부를 해석하지 않는다.
 
@@ -52,7 +58,7 @@ console.log(book());
 
 > 여기까지의 실행컨텍스트의 상태
 
-![](../../image/ec1.png)
+![ec1](./images/ec1.png)
 
 <초기화 단계>
 
@@ -70,7 +76,7 @@ console.log(book());
 
 > 여기까지의 실행컨텍스트의 상태
 
-![](../../image/ec2.png)
+![ec2](./images/ec2.png)
 
 <실행 단계>
 
@@ -84,7 +90,7 @@ console.log(book());
 ```javascript
 var obj = {};
 obj.getTotal = function (one, two, two) {
-    console.log(one + two); //66
+  console.log(one + two); //66
 };
 obj.getTotal(11, 22, 55);
 ```
@@ -93,10 +99,10 @@ obj.getTotal(11, 22, 55);
 2. getTotal()이 호출될 때, 실행컨텍스트가 생성이 되고 function object에 설정된 parameter 이름의 `작성순서`에 따라서 parameter값(arguments:11,22,55)이 `Declarative Environment Record`에 입력된다.
 3. console.log()의 실행단계에서 one과 two에 해당하는 값을 찾는데, one은 그래도 11이 오게되지만 two는 순서대로 22와 55가 존재하기때문에 마지막에 설정된 two의 값을 가져오게 된다.
 
-# Ref
+## Ref
 
--   [자바스크립트 중고급자 되기: 근본 핵심 이해](https://www.inflearn.com/course/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%A4%91%EA%B3%A0%EA%B8%89)
+- [자바스크립트 중고급자 되기: 근본 핵심 이해 Section4](https://www.inflearn.com/course/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%A4%91%EA%B3%A0%EA%B8%89)
 
--   [모던 자바스크립트 입문 8장](http://www.yes24.com/Product/Goods/59410698)
+- [모던 자바스크립트 입문 8장](http://www.yes24.com/Product/Goods/59410698)
 
-*   [](https://blog.bitsrc.io/understanding-execution-context-and-execution-stack-in-javascript-1c9ea8642dd0))
+- [Understanding Execution Context and Execution Stack in Javascript](https://blog.bitsrc.io/understanding-execution-context-and-execution-stack-in-javascript-1c9ea8642dd0))
