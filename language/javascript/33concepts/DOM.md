@@ -26,9 +26,9 @@
 
 > > 위의 API의 설명과 비교해보면 여기서는 개발자와 웹페이지 간의 연결이다. 그런데 개발자는 프로그램인가? 라는 의문이 생긴다. 사실 여기서 개발자는 프로그래밍 언어를 뜻한다. 쉽게 프로그래밍 언어를 사용하는 주체를 표현한 것이다. 즉 `프로그래밍 언어가 웹페이지에 어떻게 접근할지에 대한 것`이라고 보는 것이 정확한 표현인 것 같다
 
-![flow](../../image/DOM_flow.png)
+![dom_flow](./images/dom_flow.png)
 
-![DOM_objects](../../image/DOM_objects.PNG)
+![DOM_objects](./images/dom_objects.png)
 
 > DOM object간의 상속 관계도(구조)
 
@@ -53,7 +53,7 @@
 </html>
 ```
 
-![process](../../image/DOM_process.PNG)
+![dom_process](./images/dom_process.png)
 
 > 위의 HTML 소스가 DOM으로 변환되는 과정을 보여준다.
 
@@ -79,7 +79,7 @@
 
 > PREVIEW
 
-![preview](../../image/DOM_preview.gif)
+![preview](./images/dom_preview.gif)
 
 ```HTML
     <div class="container">

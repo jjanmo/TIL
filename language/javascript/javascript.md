@@ -130,4 +130,4 @@
 
 - 비트 연산자, 형식화 배열, 버퍼(배열)
 
-- [DOM and Layout Trees](./33concepts/DOM.md)
+- [DOM and Layout Trees](./33concepts/dom.md)
