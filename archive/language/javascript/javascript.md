@@ -2,21 +2,15 @@
 
 > [33 Concepts Every JavaScript Developer Should Know](https://github.com/leonardomso/33-js-concepts)의 키워드를 바탕으로 자바스크립트에 대한 개념을 정리한다.
 
-<br />
+> (모든 내용이 포함되어 있지는 않지만) 아래 정리한 내용은 주로 2019~2020년쯤 정리한 것으로서, 많이 미흡한 부분들이 있다. 그래서 2022년에 예전보다는 성장한(?) 나의 개념을 바탕으로 새롭게 gitbook을 이용해서 정리하여 웹상에서 출판까지 해볼 생각이다.
+
+<hr />
 
 ## 자바스크립트는 어떻게 작동할까?
-
-- 자바스크립트 엔진
 
 - [Call Stack(호출스택)](./33concepts/callstack.md)
 
 - [Execution Context(실행컨텍스트)](./33concepts/execution-context.md)
-
-- 메시지 큐와 이벤트 루프
-
-- setTimeout, setInterval, requestAnimationFrame
-
-<br />
 
 ## 타입과 연산자
 
@@ -33,12 +27,6 @@
 - [Dynamic Type](./33concepts/dynamicType.md)
 
 - [논리연산자( && 와 || )의 이해](./33concepts/logical_operator.md)
-
-- == vs === vs typeof
-
-- Nominal, 구조화, 덕 타이핑
-
-<br />
 
 ## 함수와 스코프
 
@@ -73,8 +61,6 @@
   - [new operator & constructor](./33concepts/constructor.md)
 
   - [instanceof](./33concepts/instanceof.md)
-
-- 팩토리와 클래스
 
 - 프로토타입의 상속과 체인
 

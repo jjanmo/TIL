@@ -1,3 +1,15 @@
+https://www.youtube.com/watch?v=0fYi8SGA20k
+
+https://www.youtube.com/watch?v=1ZDjzJm3vPY
+
+이력서/포트폴리오 만들기
+
+나의 개발 공부 history
+
+무엇을 공부했는지...
+어떻게 공부했는지...
+reference들에 대한 정리
+
 # <h1 align="center">My Dev Roadmap</h1>
 
 ![banner](/screenshots/banner.png)
@@ -52,17 +64,23 @@ ps2. 이 과정이 얼마나 오래 걸릴지, 얼마 후에 마무리될지는 
 
 ### CSS
 
-- [CSS unit(CSS 단위)](/language/css/css-unit.md)
+- [CSS Unit(CSS 단위)](/language/css/css-unit.md)
 
-- [Selector](/language/css/selector.md)
+- [Selector(선택자)](/language/css/selector.md)
 
-- [Box Model](/language/css/boxmodel.md)
+- [Box Model(박스모델)](/language/css/boxmodel.md)
 
-- [Display](/language/css/display.md)
+- [Display 속성에 대해서](/language/css/display.md)
 
-- [Flex Box](/language/css/float.md)
+- Layout
 
-<br />
+  - [Flex Box](/language/css/float.md)
+
+  - Grid
+
+- Pseudo Class(가상클래스)
+
+- Transform & Animation
 
 ## 📌 Library & Framework
 
@@ -82,7 +100,7 @@ ps2. 이 과정이 얼마나 오래 걸릴지, 얼마 후에 마무리될지는 
 
 - 호스팅이란??
 
-- [나를 괴롭히는 CORS, 도대체 이것은 무엇일까??](/web/cors.md)
+- [CORS에 대해서](/web/cors.md)
 
 <br />
 
